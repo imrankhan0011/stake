@@ -1,0 +1,1 @@
+import"./CWj6FrbW.js";import"./CN51-NxK.js";import{a as s,f as d}from"./Dy_KNm7H.js";/* empty css        */var a=d('<div class="loader svelte-qqt35s"><div class="dot dot-one svelte-qqt35s"></div> <div class="dot dot-two svelte-qqt35s"></div></div>');function l(t){var o=a();s(t,o)}export{l as D};

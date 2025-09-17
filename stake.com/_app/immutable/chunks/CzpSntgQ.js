@@ -1,0 +1,1 @@
+import{w as o}from"./mJIF3ZvJ.js";const c={offset:0,limit:10};function x({initial:t,refetch:n}){const e=(t==null?void 0:t.limit)||c.limit,r=(t==null?void 0:t.offset)||c.offset,a=o(e),s=o(r),m=o(!1),u=o(!1);return{limit:a,offset:s,loading:m,loadingMore:u,refetch:n,previous:()=>{s.update(f=>Math.max(0,f-e))},next:()=>{s.update(f=>f+e)}}}export{x as c};

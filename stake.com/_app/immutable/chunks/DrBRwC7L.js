@@ -1,0 +1,1 @@
+const i=t=>typeof t=="string"?t:t&&t instanceof Error||t&&typeof t=="object"&&"message"in t&&typeof t.message=="string"?t.message:"Unknown error",a=t=>t&&typeof t=="object"&&"path"in t?Array.isArray(t.path)?t.path:[]:[],f=(t,...s)=>{const n=a(t);return s.flat().some(e=>n.includes(e))};export{i as g,f as p};

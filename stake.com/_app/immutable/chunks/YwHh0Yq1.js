@@ -1,0 +1,1 @@
+import{f as n}from"./B2iWwL45.js";import{a as r}from"./sKaxz2E7.js";const c=async(i,s)=>{var e,t;const a=!!((t=(e=await n.getFeatureFlagConfig(s,i))==null?void 0:e.config)!=null&&t.enabled);return r(`feature-flag-active-casino-players-${a?"enabled":"disabled"}`),a};export{c as i};

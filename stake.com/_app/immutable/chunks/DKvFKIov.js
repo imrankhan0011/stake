@@ -1,0 +1,1 @@
+const l=e=>{if(typeof window<"u"){const o=e??document.getElementById("scrollable");o&&o.scrollTo({top:0})}},t=e=>{const o=document.querySelector(e);o&&o.scrollIntoView({behavior:"smooth"})};export{t as a,l as s};

@@ -1,0 +1,1 @@
+import{ab as a,ac as c}from"./jOU3gvjy.js";import{d as n,w as r}from"./Bhbbb5KL.js";const d=t=>t<=720,e="@@fixtureStacked",k=()=>{const t=r(0),s=n(t,o=>d(o));return a(e,s),t},S=()=>c(e);export{S as g,k as s};

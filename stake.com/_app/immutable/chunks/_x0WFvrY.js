@@ -1,0 +1,1 @@
+import{_ as s}from"./CMNPK1gw.js";import{w as n}from"./Bhbbb5KL.js";import{n as i}from"./DKwX7yNB.js";const h=(()=>{const t=n([]);return{...t,remove:e=>{t.update(o=>o.filter(a=>a.id!==e))},open:e=>{t.update(o=>o.some(r=>s.isEqual(s.omit(r,"id"),e))?o:[{...e,id:i()},...o])}}})(),N=n(!1);export{N as h,h as n};

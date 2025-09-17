@@ -1,0 +1,1 @@
+import{o as d,c as a,i as c}from"./CfTKU0o5.js";function l(n,i){return d(function(f,t){var r=0;f.subscribe(a(t,function(e){return n.call(i,e,r++)&&t.next(e)}))})}function x(n,i){return i===void 0&&(i=c),n=n??o,d(function(f,t){var r,e=!0;f.subscribe(a(t,function(u){var s=i(u);(e||!n(r,s))&&(e=!1,r=s,t.next(u))}))})}function o(n,i){return n===i}export{x as d,l as f};
