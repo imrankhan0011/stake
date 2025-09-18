@@ -469,12 +469,9 @@ class CryptoDepositForm {
     // Update currency display
     const selectDisplay = this.currencySelect.querySelector(".select-display");
     selectDisplay.innerHTML = `
-            <div class="selected-option">
-              <div class="currency-icon selected-icon-size" >${coin.icon}</div>
-            <div class="currency-ctainer svelte-1qulizd"><span class="weight-semibold line-height-120pct align-left size-default text-size-default variant-highlighted with-icon-space is-truncate svelte-794yvu" style="max-width: 22ch;">${coin.currency}</span> <span class="weight-normal line-height-120pct align-left size-sm text-size-sm variant-subtle with-icon-space is-truncate svelte-794yvu" style="max-width: 22ch;">${coin.name}</span></div>
-          <span class="dropdown-icon arrow svelte-9n45i2"><svg fill="currentColor" viewBox="0 0 64 64" class="svg-icon " style="transform: rotate(0deg);
-   "> <title></title> <path d="M32.271 49.763 9.201 26.692l6.928-6.93 16.145 16.145 16.144-16.144 6.93 6.929-23.072 23.07z"></path></svg></span>
-        `;
+          <div class="ctainer svelte-1i3wgrn"><div class="currency-details svelte-1i3wgrn"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><svg data-ds-icon="USDT" width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" class="inline-block shrink-0"><!----><path fill="#26A17B" d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11"></path><path fill="#fff" d="M13.322 12.95c-.076.005-.466.028-1.336.028-.694 0-1.183-.02-1.355-.029v.002c-2.673-.117-4.668-.583-4.668-1.14s1.995-1.021 4.668-1.14v1.817c.175.013.675.042 1.367.042.83 0 1.246-.034 1.324-.041v-1.817c2.667.119 4.657.584 4.657 1.14s-1.99 1.02-4.657 1.139m0-2.467V8.856h3.722v-2.48H6.909v2.48h3.722v1.626c-3.025.139-5.3.738-5.3 1.456s2.275 1.317 5.3 1.456v5.213h2.69v-5.214c3.02-.139 5.29-.738 5.29-1.455s-2.27-1.316-5.29-1.455"></path></svg><!----> <div class="currency-ctainer items-baseline svelte-1i3wgrn"><!----><span tag="span" type="body" size="md" strong="true" variant="neutral-default" class="text-neutral-default ds-body-md-strong" data-ds-text="true"><!---->USDT</span><!----> <!----><span tag="span" type="body" size="sm" class="ds-body-sm text-[var(--grey-200)]" data-ds-text="true"><!---->USD Tether</span><!----></div></div> <!----></div>
+        <svg data-ds-icon="ChevronDown" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" class="inline-block shrink-0"><!----><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6-.068-.076A1 1 0 0 1 6.63 8.225l.076.068L12 13.586z"></path></svg>
+          `;
 
           if(coin.reset===true){
       this.resetbutton.style.display = "block";
@@ -551,9 +548,8 @@ class CryptoDepositForm {
     // Update network display
     const selectDisplay = this.networkSelect.querySelector(".select-display");
     selectDisplay.innerHTML = `
-          <div class="flex items-center h-8"><span class="network-name-title">${network.name}</span></div>
-          <svg fill="currentColor" viewBox="0 0 64 64" class="svg-icon " style="transform: rotate(0deg);
-   "> <title></title> <path d="M32.271 49.763 9.201 26.692l6.928-6.93 16.145 16.145 16.144-16.144 6.93 6.929-23.072 23.07z"></path></svg>
+          <div class="flex items-center h-6"><span type="body" tag="span" size="md" strong="true" class="ds-body-md-strong" data-ds-text="true"><!---->${network.name}</span></div>
+          <svg data-ds-icon="ChevronDown" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" class="inline-block shrink-0"><!----><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6-.068-.076A1 1 0 0 1 6.63 8.225l.076.068L12 13.586z"></path></svg>
 
             
         `;
