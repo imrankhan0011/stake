@@ -1,1 +1,0 @@
-import{i as r}from"./-2c5L_R-.js";import{C as o}from"./BpphRAvc.js";const n=()=>({body:r._("An error occurred while claiming the bonus. Please try again."),title:r._("Error"),icon:o,type:"negative"});export{n as c};

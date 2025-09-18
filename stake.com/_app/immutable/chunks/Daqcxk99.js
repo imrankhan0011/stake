@@ -1,1 +1,0 @@
-import{i as e}from"./-2c5L_R-.js";const a={minPageNumber:e._("The minimum page number is 1"),maxPageNumber:{id:"The maximum page number is {maxPageNumber}"},pageNumbersTruncated:{id:"There are more pages, but you can only see up to page {maxPageNumber}"}};export{a as m};

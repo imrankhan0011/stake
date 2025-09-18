@@ -1,1 +1,0 @@
-const s=r=>{const e=new URLSearchParams(r);return Object.fromEntries(e.entries())},n=r=>new URLSearchParams(r).toString(),a=({pageQuery:r,search:e})=>{const t={...Object.fromEntries(Array.from((r||new URLSearchParams(window.location.search)).entries())),...e};return`?${n(t)}`},i={parse:s,stringify:n,generate:a};export{i as q};

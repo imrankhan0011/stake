@@ -1,1 +1,0 @@
-import{ab as a,ac as e}from"./jOU3gvjy.js";import{w as r}from"./Bhbbb5KL.js";const s="@@layout",i=()=>{const t=r(1200);return a(s,t),t},m=()=>e(s),p=({viewportSize:t,maxWidth:o=768})=>t<o,u=({viewportSize:t,minWidth:o=1024})=>t>=o;export{u as a,i as c,m as g,p as i};

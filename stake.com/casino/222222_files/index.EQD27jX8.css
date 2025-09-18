@@ -1,1 +1,0 @@
-.buttons.svelte-e2ggy8{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-2);width:100%}.buttons.svelte-e2ggy8>button{flex:1}.buttons.stake.svelte-e2ggy8>button:nth-last-child(1):nth-child(odd),.buttons.sweeps.svelte-e2ggy8>button:first-child:nth-last-child(odd){grid-column:span 2}

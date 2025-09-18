@@ -1,1 +1,0 @@
-const t="reloadMitigatedChallenge";function a(){localStorage.getItem(t)&&localStorage.removeItem(t)}function l(){{const e=Number(localStorage.getItem(t));1>=e&&(localStorage.setItem(t,String(e+1)),window.location.reload())}}async function o(e){e&&(e.status===403&&e.headers.get("cf-mitigated")==="challenge"?l():a())}export{l as a,a as b,o as r};

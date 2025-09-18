@@ -1,1 +1,0 @@
-import{X as T,Y,u as c,Z as q,_ as x}from"./jOU3gvjy.js";function S(i,r){return i===r||(i==null?void 0:i[x])===r}function B(i={},r,h,k){return T(()=>{var s,f;return Y(()=>{s=f,f=(k==null?void 0:k())||[],c(()=>{i!==h(...f)&&(r(i,...f),s&&S(h(...s),i)&&r(null,...s))})}),()=>{q(()=>{f&&S(h(...f),i)&&r(null,...f)})}}),i}export{B as b};

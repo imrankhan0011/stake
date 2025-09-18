@@ -1,1 +1,0 @@
-const s=t=>{const e="data-block-touch-pan",o="scrollbar-visible";c(t)?(t.removeAttribute(e),t.classList.add(o)):(t.setAttribute(e,"true"),t.classList.remove(o))},c=t=>t.scrollHeight>t.clientHeight&&getComputedStyle(t).overflowY!=="hidden",r=t=>{s(t);const e=new ResizeObserver(()=>s(t));return e.observe(t),{update(){s(t)},destroy(){e.disconnect()}}};export{r as b};

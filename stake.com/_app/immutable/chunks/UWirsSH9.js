@@ -1,2 +1,0 @@
-import"./CWj6FrbW.js";import"./CN51-NxK.js";import{g as s,e as a}from"./jOU3gvjy.js";import{l as n,p as r,c as $}from"./BbnqNlY1.js";import{C as f}from"./D9S5NkZw.js";function O(o,e){const i=n(e,["children","$$slots","$$events","$$legacy"]),l=n(i,["style","variant","isOpen"]);let p=r(e,"style",8,""),t=r(e,"variant",8,"standard"),m=r(e,"isOpen",8);{let d=a(()=>m()?t()==="standard"||t()==="menu-item"?"0":"180":t()==="standard"?"90":t()==="menu-item"?"270":"0"),c=a(p);f(o,$(()=>l,{get style(){return`transform: rotate(${s(d)??""}deg);
-   ${s(c)??""}`}}))}}export{O as A};

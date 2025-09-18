@@ -1,1 +1,0 @@
-import"./BtULLpdb.js";import{ac as n}from"./jOU3gvjy.js";const o=()=>n("parent"),t={sidebarTabs:"minimal",tabs:"tab","dropdown-light":"dropdown","dropdown-dark":"link",input:"link",subNav:"tabmenu",leftsidebar:"minimal"},e=({parent:a})=>a&&a in t?t[a]:"link";export{e as a,o as g};

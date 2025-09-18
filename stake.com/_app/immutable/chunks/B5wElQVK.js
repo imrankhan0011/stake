@@ -1,1 +1,0 @@
-import{i as e}from"./-2c5L_R-.js";const s={title:e._("Not Found"),oops:e._("Oops! The page you were looking for doesn't exist."),wrongAddress:e._("You may have misstyped the address"),wrongAddress2:e._("or the page may have moved."),returnHome:e._("Go to home page")};export{s as m};

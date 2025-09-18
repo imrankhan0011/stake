@@ -1,1 +1,0 @@
-import{u as r,s as e,p as t}from"./Dsr-vz37.js";const a={get data(){return t.data},get error(){return t.error},get form(){return t.form},get params(){return t.params},get route(){return t.route},get state(){return t.state},get status(){return t.status},get url(){return t.url}},u={get current(){return r.current},check:e.updated.check},n=a,o=u;export{n as p,o as u};

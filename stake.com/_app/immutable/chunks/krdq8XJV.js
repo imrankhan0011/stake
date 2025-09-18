@@ -1,1 +1,0 @@
-import{R as a}from"./pv1l741K.js";import{w as r}from"./Bhbbb5KL.js";import{f as t}from"./BV84Ne7d.js";async function l(o){return await t({doc:a,variables:{},load:o})||null}const c=r(null);export{c as d,l};
