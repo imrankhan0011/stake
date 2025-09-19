@@ -6,6 +6,7 @@ const showalertbtn2 = document.getElementById("show-copied-alert")
 
 
 const openBtn = document.getElementById("openModalBtn");
+const openbtn2 =  document.getElementById("openModalBtn2")
 const closeBtn = document.getElementById("closeModalBtn");
 const modal = document.getElementById("myModal");
 const claim = document.getElementById("claim");
@@ -25,6 +26,10 @@ const currencyPops6 = document.getElementById("browse-model");
 openBtn.addEventListener("click", () => {
   modal.style.display = "inline-flex";
 });
+openbtn2.addEventListener("click", () => {
+  modal.style.display = "inline-flex";
+});
+
 currenyPops1.addEventListener("click", () => {
   modal.style.display = "inline-flex";
 });
