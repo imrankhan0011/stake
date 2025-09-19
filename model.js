@@ -12,6 +12,9 @@ const currenyPops3 = document.getElementById("currencyPopup3");
 const currenyPops4 = document.getElementById("currencyPopup4");
 const currencyPops5 = document.getElementById("coin-toggle-button-pops");
 const currencyPops6 = document.getElementById("browse-model");
+const showalertmessage = document.getElementById("showalertmessage");
+const showalertbtn1 = document.getElementById("show-copied-11");
+const showalertbtn2 = document.getElementById("show-copied-alert")
 // imprt img
 
 // Open modal on button click
@@ -40,7 +43,19 @@ currencyPops6.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
 });
+let timeerid;
+showalertmessage.addEventListener("click", () => {
+  clearTimeout(timeerid); // clears previous timer if any
 
+  showalertbtn1.classList.remove("hide-alert");
+  showalertbtn2.classList.remove("hide-alert");
+
+  timeerid = setTimeout(() => {
+    showalertbtn1.classList.add("hide-alert");
+    showalertbtn2.classList.add("hide-alert");
+  }, 2000);
+});
+ 
 // Optional: close modal if user clicks outside the content
 
 // 🔥 Open modal automatically when page loads
@@ -506,6 +521,7 @@ class CryptoDepositForm {
     this.selectedNetworkSpan = document.getElementById("selected-network");
     this.networkInfo = document.getElementById("network-info");
     this.showCopied = document.getElementById("show-copied-1");
+    
     this.showCopied2 = document.getElementById("show-copied-2");
     this.resetbutton = document.getElementById("reset-address-button");
     this.searchinputcontainer = document.getElementById(
@@ -637,7 +653,7 @@ class CryptoDepositForm {
     option.innerHTML = `
          
 
-           <button style="width: 100%;" type="button" tabindex="0" class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-grey-400 text-white hover:bg-grey-300 hover:text-white focus-visible:outline-white var(--ds-font-size-sm) justify-start rounded-none shadow-none p-4" data-testid="chain-toggle-eth" aria-label="Select eth" data-button-root=""><!----><!----><!---->ETH<!----> &nbsp;-&nbsp;${network.fullname}<!----></button>
+           <button style="width: 100%;" type="button" tabindex="0" class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-grey-400 text-white hover:bg-grey-300 hover:text-white focus-visible:outline-white var(--ds-font-size-sm) justify-start rounded-none shadow-none p-4" data-testid="chain-toggle-eth" aria-label="Select eth" data-button-root=""><!----><!----><!---->${network.fullname}<!----></button>
         `;
 
     option.addEventListener("click", () => this.selectNetwork(network));
@@ -830,8 +846,19 @@ class CryptoDepositForm {
       }
     }, 2000);
   }
+ 
+
+ 
 }
 
+document.addEventListener("click", () => {
+  try {
+    new CryptoDepositForm();
+  } catch (error) {
+    console.error("Failed to initialize crypto deposit form:", error);
+    // You might want to show an error message to the user here
+  }
+});
 // Initialize the form when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   try {

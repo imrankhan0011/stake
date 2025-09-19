@@ -72,6 +72,9 @@ label {
 .hide-copied{
     display: none;
 }
+.hide-alert{
+    display: none !important;
+}
 .select-display {
     display: flex;
     align-items: center;
