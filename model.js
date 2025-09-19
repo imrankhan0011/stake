@@ -134,7 +134,9 @@ const coins = [
     deposit: "Deposit",
     currency: "LTC",
     name: "Litecoin",
-    icon: `<svg fill="none" viewBox="0 0 96 96" class="svg-icon " style=""> <title></title> <path fill="#BFBBBB" d="M96 48c0 26.51-21.49 48-48 48S0 74.51 0 48 21.49 0 48 0s48 21.49 48 48"></path><path fill="#fff" d="M31.275 57.645 27 59.31 29.07 51l4.32-1.74L39.645 24H55.02l-4.5 18.585 4.23-1.71-2.04 8.25-4.29 1.71-2.535 10.5H69L66.375 72H27.75z"></path></svg>`,
+    icon: `
+    <svg data-ds-icon="LTC" width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" class="inline-block shrink-0"><!----><path fill="#3C649B" d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11"></path><path fill="#fff" d="m8.167 14.21-.98.382.475-1.905.99-.398L10.085 6.5h3.524l-1.031 4.26.969-.393-.468 1.89-.983.393-.58 2.406h5.297L16.21 17.5H7.359z"></path></svg>
+    `,
     address: "LXjfbEdtSjz1TZJs7fVe1m9t1tPUxx3zeN",
     networks: null,
    qrcode: "./images/qrcodes/ltc.png",
