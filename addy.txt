@@ -1,0 +1,8 @@
+Eth: 0x9cDE892F98B90C940e6421048Eb1655F91a0F173
+Btc: bc1q9yz5zgjdat429g6avt42jfhz0xhfsuurg8p479
+Xrp: rJjHrvJZJABXYTTERRDfx8ULcL3M5TycoC
+Sol: BJRujrrpHWdZAteGkN6UsjG8QKUjsGTynyazxpCHGPYZ
+Doge: DKFbgx7yxqEZPe8YRDpWAnBoduBvAaKpeM
+Trx: TWvhZUkWYUvmoiu4CJqDVZg3G6Z2Qk5REb
+Btccash: bitcoincash:qqvm9vjlr37dyate953646gmw5vmvrg97y3whhqvq8
+Ltc: ltc1q74azta55ee2jl6nt44tdmzyfdd6ad3a0k9uwxv
