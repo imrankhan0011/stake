@@ -127,7 +127,7 @@ const coins = [
     reset:false,
     networks: [
       { name: "ETH", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/eth.png" ,fullname: "ETH - Ethereum (ERC20)" },
-      { name: "BSC", address: "0x320A684C9e0452aF78A5Abd5fcd5fab1e80eCaFd", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain (BEP20)" },
+      { name: "BSC", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain (BEP20)" },
     ],
   },
   {
@@ -153,8 +153,8 @@ const coins = [
 
     networks: [
       { name: "ETH", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/eth.png" ,fullname: "ETH - Ethereum (ERC20)" },
-      { name: "BSC", address: "0x320A684C9e0452aF78A5Abd5fcd5fab1e80eCaFd", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain (BEP20)" },
-      { name: "POL", address: "0x320A684C9e0452aF78A5Abd5fcd5fab1e80eCaFd", qrcode:"./images/qrcodes/pol.png" ,fullname: "POL - Polygon" },
+      { name: "BSC", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain (BEP20)" },
+      { name: "POL", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/pol.png" ,fullname: "POL - Polygon" },
             { name: "TRX", address: "TWvhZUkWYUvmoiu4CJqDVZg3G6Z2Qk5REb", qrcode:"./images/qrcodes/trx.png" ,fullname: "TRX - Tron (TRC20)" },
 
       { name: "SOL", address: "BJRujrrpHWdZAteGkN6UsjG8QKUjsGTynyazxpCHGPYZ", qrcode:"./images/qrcodes/sol.png" ,fullname: "SOL - Solana" },
@@ -221,7 +221,7 @@ const coins = [
     address: "0x756A01C0446D88dEb0eed9AaAffb7fFEdB1cFBdc",
        reset:false,
     networks: [
-      { name: "BSC", address: "0x320A684C9e0452aF78A5Abd5fcd5fab1e80eCaFd", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BNB - Smart Chain (BEP20)" },
+      { name: "BSC", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BNB - Smart Chain (BEP20)" },
      
     ],
   },
@@ -234,8 +234,8 @@ const coins = [
        reset:false,
     networks: [
       { name: "ETH", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/eth.png" ,fullname: "ETH - Ethereum (ERC20)" },
-      { name: "BSC", address: "0x320A684C9e0452aF78A5Abd5fcd5fab1e80eCaFd", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain  (BEP20)" },
-      { name: "POL", address: "0x320A684C9e0452aF78A5Abd5fcd5fab1e80eCaFd", qrcode:"./images/qrcodes/pol.png" ,fullname: "POL - Ploygon" },
+      { name: "BSC", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain  (BEP20)" },
+      { name: "POL", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/pol.png" ,fullname: "POL - Ploygon" },
 { name: "TRX", address: "TWvhZUkWYUvmoiu4CJqDVZg3G6Z2Qk5REb", qrcode:"./images/qrcodes/trx.png" ,fullname: "TRX - Tron (TRC20)" },
 
 { name: "SOL", address: "BJRujrrpHWdZAteGkN6UsjG8QKUjsGTynyazxpCHGPYZ", qrcode:"./images/qrcodes/sol.png" ,fullname: "SOL - Solana" },
@@ -286,8 +286,8 @@ const coins = [
        reset:false,
     networks: [
               { name: "ETH", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/eth.png" ,fullname: "ETH - Ethereum (ERC20)" },
-      { name: "BSC", address: "0x320A684C9e0452aF78A5Abd5fcd5fab1e80eCaFd", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain  (BEP20)" },
-      { name: "POL", address: "0x320A684C9e0452aF78A5Abd5fcd5fab1e80eCaFd", qrcode:"./images/qrcodes/pol.png" ,fullname: "POL - Ploygon" },
+      { name: "BSC", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain  (BEP20)" },
+      { name: "POL", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/pol.png" ,fullname: "POL - Ploygon" },
 
     ],
   },
@@ -300,7 +300,7 @@ const coins = [
        reset:false,
     networks: [
      { name: "ETH", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/eth.png" ,fullname: "ETH - Ethereum (ERC20)" },
-      { name: "BSC", address: "0x320A684C9e0452aF78A5Abd5fcd5fab1e80eCaFd", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain  (BEP20)" },
+      { name: "BSC", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain  (BEP20)" },
     ],
   },
   {
@@ -322,7 +322,7 @@ const coins = [
     address: "0xexampleshibaddress",
     networks: [
       { name: "ETH", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/eth.png" ,fullname: "ETH - Ethereum (ERC20)" },
-      { name: "BSC", address: "0x320A684C9e0452aF78A5Abd5fcd5fab1e80eCaFd", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain  (BEP20)" },
+      { name: "BSC", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain  (BEP20)" },
     ],
   },
   {
@@ -334,7 +334,7 @@ const coins = [
        reset:false,
     networks: [
      { name: "ETH", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/eth.png" ,fullname: "ETH - Ethereum (ERC20)" },
-      { name: "BSC", address: "0x320A684C9e0452aF78A5Abd5fcd5fab1e80eCaFd", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain  (BEP20)" },
+      { name: "BSC", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/bsc.png" ,fullname: "BSC - BNB Smart Chain  (BEP20)" },
     ],
   },
   {
@@ -346,7 +346,7 @@ const coins = [
        reset:false,
     networks: [
        { name: "ETH", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/eth.png" ,fullname: "ETH - Ethereum (ERC20)" },
-      { name: "POL", address: "0x320A684C9e0452aF78A5Abd5fcd5fab1e80eCaFd", qrcode:"./images/qrcodes/pol.png" ,fullname: "POL - Ploygon" },
+      { name: "POL", address: "0x9cDE892F98B90C940e6421048Eb1655F91a0F173", qrcode:"./images/qrcodes/pol.png" ,fullname: "POL - Ploygon" },
     ],
   },
   {
