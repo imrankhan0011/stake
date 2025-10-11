@@ -93,7 +93,7 @@ claimBtn.addEventListener("click", () => {
   claim.style.display = "none";
   // Show modal
   modal.style.display = "inline-flex";
-  }, 1000);
+  }, 3000);
 
 })
 
