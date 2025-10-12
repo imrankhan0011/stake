@@ -59,6 +59,7 @@
 
 .wrapper.currency-view-detailed.svelte-eg66ik {
     padding: var(--spacing-0) var(--spacing-4) 0;
+        background: rgb(47, 69, 83);
 }
 
 .wrapper.currency-view-detailed.svelte-eg66ik svg {
