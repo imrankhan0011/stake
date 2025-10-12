@@ -9,6 +9,12 @@
 .wallet-icon{
     display: none !important;
 }
+.modal{
+  
+  overflow: hidden !important;
+
+
+}
 .input-button-wrap.svelte-1w7n5sk button+button:after{
    
     background-color: #2F4553 !important;

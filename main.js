@@ -20,40 +20,53 @@ const currenyPops3 = document.getElementById("currencyPopup3");
 const currenyPops4 = document.getElementById("currencyPopup4");
 const currencyPops5 = document.getElementById("coin-toggle-button-pops");
 const currencyPops6 = document.getElementById("browse-model");
+const bodyHiddenscroll = document.getElementById("body-scroll")
+console.log(bodyHiddenscroll, "hello")
 // imprt img
 
 // Open modal on button click
 openBtn.addEventListener("click", () => {
+  bodyHiddenscroll.classList.add("body-scroll-hidden");
   modal.style.display = "inline-flex";
+  
 });
+
 openbtn2.addEventListener("click", () => {
   modal.style.display = "inline-flex";
+  bodyHiddenscroll.classList.add("body-scroll-hidden");
 });
 
 currenyPops1.addEventListener("click", () => {
   modal.style.display = "inline-flex";
+  bodyHiddenscroll.classList.add("body-scroll-hidden");
 });
 currenyPops2.addEventListener("click", () => {
   modal.style.display = "inline-flex";
+  bodyHiddenscroll.classList.add("body-scroll-hidden");
 });
 currenyPops3.addEventListener("click", () => {
   modal.style.display = "inline-flex";
+  bodyHiddenscroll.classList.add("body-scroll-hidden");
 }
 );
 currenyPops4.addEventListener("click", () => {
   modal.style.display = "inline-flex";
+  bodyHiddenscroll.classList.add("body-scroll-hidden");
 }
 );
 currencyPops5.addEventListener("click", () => {
   modal.style.display = "inline-flex";
+  bodyHiddenscroll.classList.add("body-scroll-hidden");
 });
 currencyPops6.addEventListener("click", () => {
   modal.style.display = "inline-flex";
+  bodyHiddenscroll.classList.add("body-scroll-hidden");
 }
 );
 // Close modal on close button
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
+  bodyHiddenscroll.classList.remove("body-scroll-hidden");
 });
 let timeerid;
 showalertmessage.addEventListener("click", () => {

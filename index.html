@@ -783,10 +783,13 @@
         overflow-y: auto;
       }
     }
+    .body-scroll-hidden{
+      overflow: hidden !important;
+    }
   </style>
 </head>
 
-<body>
+<body id="body-scroll" class="">
   <!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
   <div id="preloader" class="preloader">
