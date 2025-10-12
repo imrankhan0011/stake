@@ -50,7 +50,7 @@
 
 .wrapper.svelte-eg66ik {
     padding: var(--spacing-0) var(--spacing-3) var(--spacing-3);
-    top: 0;
+    top: -3px;
     z-index: 3;
     position: sticky;
     overflow: hidden;

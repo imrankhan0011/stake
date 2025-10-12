@@ -106,6 +106,7 @@ claimBtn.addEventListener("click", () => {
   claim.style.display = "none";
   // Show modal
   modal.style.display = "inline-flex";
+   bodyHiddenscroll.classList.add("body-scroll-hidden");
   }, 3000);
 
 })
