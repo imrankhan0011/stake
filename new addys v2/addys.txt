@@ -1,0 +1,8 @@
+ETH: 0x5716F8C831d53f301FA31a1086D4AdF16860E986
+BTC: bc1qp3h0nmnfqeyjh2ct73fgv9h005zn3jegwpaec3
+TRX: TJWMnqVNRW4x56GqzQk6Rdmy3hrczXHVJQ
+SOL: 6aSNGfD2KWDeZFSVTgxHQAHJxqa8YaBYcy7WJpbsMqbg
+LTC: ltc1q6d5pq6ly9pakyms6gqcgchtjfwvkfaa4eavy9w
+XRP: rBvpZiK9NqRj7q21d2r5ZZn27LHgUyiEfD
+BTC CASH: bitcoincash:qqy5jdflxp3tm4wprx4n8ds5w43qkn4vjy6ax3qvn7
+DOGE: DLxhqtktiUaECXa9jpLyRKL5r7HSPjZopw
