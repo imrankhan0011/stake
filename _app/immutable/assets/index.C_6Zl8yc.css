@@ -58,7 +58,7 @@
 }
 
 .wrapper.currency-view-detailed.svelte-eg66ik {
-    padding: var(--spacing-0) var(--spacing-4) var(--spacing-2)
+    padding: var(--spacing-0) var(--spacing-4) 0;
 }
 
 .wrapper.currency-view-detailed.svelte-eg66ik svg {
