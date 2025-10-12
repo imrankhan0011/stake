@@ -220,7 +220,7 @@ label {
     display: none !important;
 }
 .select-display:hover {
-    background-color: #557086;
+    /* background-color: #557086; */
 }
 
 .custom-select.active .select-display {
