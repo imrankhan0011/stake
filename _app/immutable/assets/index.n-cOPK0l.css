@@ -1,1 +1,0 @@
-.buttons.svelte-l4rod7{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--spacing-2);width:100%;font:var(--ds-body-md-strong)}.buttons.svelte-l4rod7>button{flex:1}.buttons.stake.svelte-l4rod7>button:nth-last-child(1):nth-child(odd),.buttons.sweeps.svelte-l4rod7>button:first-child:nth-last-child(odd){grid-column:span 2}
