@@ -122,7 +122,7 @@ const coins = [
     deposit: "Deposit",
     currency: "ETH",
     name: "Ethereum",
-    icon: `<svg fill="none" viewBox="0 0 96 96" class="svg-icon " style=""> <title></title> <path fill="#627EEA" d="M96 48c0 26.51-21.49 48-48 48S0 74.51 0 48 21.49 0 48 0s48 21.49 48 48"></path><path fill="#fff" d="M49.5 12v26.61L72 48.66z" opacity=".6"></path><path fill="#fff" d="M49.5 12 27 48.66l22.5-10.05z"></path><path fill="#fff" d="M49.5 65.91V84L72 52.845z" opacity=".6"></path><path fill="#fff" d="M49.5 84V65.895L27 52.845z"></path><path fill="#fff" d="M49.5 61.725 72 48.66 49.5 38.61z" opacity=".2"></path><path fill="#fff" d="m27 48.66 22.5 13.065V38.61z" opacity=".6"></path></svg>`,
+    icon: `<svg data-ds-icon="ETH" width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" class="inline-block shrink-0"><!----><path fill="#627EEA" d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11"></path><path fill="#fff" d="M12.344 3.75v6.098l5.156 2.303zm0 0-5.156 8.401 5.156-2.303zm0 12.354v4.146l5.156-7.14zm0 4.146V16.1l-5.156-2.99z"></path><path fill="#fff" d="m12.344 15.145 5.156-2.994-5.156-2.303zm-5.156-2.994 5.156 2.994V9.848z"></path></svg>`,
     address: "0x5716F8C831d53f301FA31a1086D4AdF16860E986",
     reset:false,
     networks: [
