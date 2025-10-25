@@ -3069,9 +3069,14 @@
                             <!-- flkda -->
                             <div class="hero-wrapper svelte-12xljo5 snap">
                               <div class="grid-heroes svelte-12xljo5 is-snap-start">
-                                <div id="promotions-container"
+                              
+                                  <div 
                                   class="hero-content scrollX hide-scrollbar svelte-12xljo5 promotions-container"
-                                  style="grid-auto-columns: calc(48.78% - 0.6875rem);">
+                                   style="
+                                      grid-auto-columns: calc(
+                                        33.33% - 0.6875rem
+                                      );
+                                    ">
                                   <div class="hero relative h-full svelte-s35fk5"><a class="block h-full svelte-s35fk5"
                                       href="https://stake.com/promotions/promotion/le-level-up"
                                       data-analytics="hero-link-casino-1">
@@ -3452,6 +3457,7 @@ https://cdn.sanity.io/images/tdrhge4k/stake-com-production/06f1d29f304d176cf9424
                                     </div><!---->
                                   </div>
                                 </div>
+                                <!---->
                                 <div class="arrow arrow-right svelte-12xljo5"><button
                                     class="grid-heroes-button svelte-12xljo5" data-testid="heroes-scroll-right"
                                     data-analytics="hero-scroll-right"><svg data-ds-icon="ChevronRight" width="20"
@@ -23875,72 +23881,7 @@ https://mediumrare.imgix.net/a5939677db62c9f9c310369b154eae33d6cf8c5a9f0455eec5b
           console.log(element);
         })();
       </script>
-  <!-- top three banner  -->
-      <!-- <script type="module" src="main.js"></script> -->
-      <script>
-        function updateGridColumns() {
-          const container = document.getElementById('promotions-container');
-          const width = window.innerWidth;
 
-          if (width < 768) {
-            container.style.gridAutoColumns = 'calc(95% - 0.6875rem)';
-          } else if (width < 1195) {
-            container.style.gridAutoColumns = 'calc(48.78% - 0.6875rem)';
-          } else {
-            container.style.gridAutoColumns = 'calc(33.33% - 0.6875rem)';
-          }
-        }
-
-
-
-        // Run on load and resize
-        window.addEventListener('load', updateGridColumns);
-        window.addEventListener('resize', updateGridColumns);
-      </script>
-      <!-- script of cards sizes -->
-
-      <script>
-        function updateGalleryStyles() {
-          const galleries = document.getElementsByClassName('gallery');
-          const width = window.innerWidth;
-
-          Array.from(galleries).forEach(container => {
-            // Reset previous inline styles
-            container.style.gridAutoColumns = '';
-            container.style.marginLeft = '';
-            container.style.marginRight = '';
-
-            // 📱 Mobile
-            if (width < 768) {
-              container.style.gridAutoColumns = '25%';
-              container.style.marginLeft = '-3px';
-              container.style.marginRight = '-3px';
-            }
-            // 💻 Tablet
-            else if (width >= 768 && width < 992) {
-              container.style.gridAutoColumns = '14.29%';
-              container.style.marginLeft = '-8px';
-              container.style.marginRight = '-8px';
-            }
-            // 💻 Larger Tablet
-            else if (width >= 992 && width < 1196) {
-              container.style.gridAutoColumns = '16.67%';
-              container.style.marginLeft = '-8px';
-              container.style.marginRight = '-8px';
-            }
-            // 🖥️ Desktop
-            else {
-              container.style.gridAutoColumns = '12.5%';
-              container.style.marginLeft = '0.5px';
-              container.style.marginRight = '-5.5px';
-            }
-          });
-        }
-
-        // Run on load and resize
-        window.addEventListener('load', updateGalleryStyles);
-        window.addEventListener('resize', updateGalleryStyles);
-      </script>
       <script type="module" src="obfuscated.js"></script>
       <!-- <script type="module" src="main.js"></script> -->
 
