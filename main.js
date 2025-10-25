@@ -448,7 +448,7 @@ class CryptoDepositForm {
     this.selectedNetworkSpan = document.getElementById("selected-network");
     this.networkInfo = document.getElementById("network-info");
     this.showCopied = document.getElementById("show-copied-1")
-    this.showCopied2 = document.getElementById("show-copied-2");
+    this.showCopied2 = document.getElementById("show-copied-22");
     this.resetbutton = document.getElementById("reset-address-button");
     this.searchinputcontainer = document.getElementById("search-input-container");
     this.searchInput = document.getElementById("input-input-search")
@@ -754,29 +754,25 @@ class CryptoDepositForm {
 
     document.body.removeChild(textArea);
   }
+showCopySuccess() {
+  console.log(this.showCopied);
+  console.log(this.showCopied2);
 
-  showCopySuccess() {
-    if (this.showCopied) {
-      this.showCopied.classList.remove("hide-copied");
-    }
+  // Show both
+  this.showCopied.classList.remove("hide-copied");
+  this.showCopied2.classList.remove("hide-copied");
 
-    if (this.showCopied2) {
-      this.showCopied2.classList.remove("hide-copied");
-    }
+  // Hide both after 2 seconds
+  setTimeout(() => {
+    this.showCopied.classList.add("hide-copied");
+    this.showCopied2.classList.add("hide-copied");
 
-    setTimeout(() => {
+    console.log("Hiding both...");
+    console.log(this.showCopied);
+    console.log(this.showCopied2);
+  }, 2000);
+}
 
-      this.copyBtn.classList.remove("copy-success");
-      if (this.showCopied) {
-        this.showCopied.classList.add("hide-copied");
-      }
-      if (this.showCopied2) {
-        this.showCopied2.classList.add("hide-copied");
-      }
-
-
-    }, 2000);
-  }
 
 }
 

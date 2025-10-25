@@ -17,7 +17,7 @@
 }
 .input-button-wrap.svelte-1w7n5sk button+button:after{
    
-    background-color: #2F4553 !important;
+    /* background-color: #2F4553 !important; */
 }
 #loading-claim{
     display:none
@@ -75,9 +75,11 @@ label {
     position: relative;
     cursor: pointer;
 }
-.hide-copied{
-    display: none;
+.hide-copied {
+  opacity: 0;
+  visibility: hidden;
 }
+
 .hide-alert{
     display: none !important;
 }
@@ -555,4 +557,7 @@ label {
 .tag-icon{
     width: 20px;
     height: 20px;
+}
+.show-copied-1{
+    color: white !important;
 }
