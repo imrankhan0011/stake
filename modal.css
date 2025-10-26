@@ -569,3 +569,12 @@ label {
 .show-copied-1{
     color: white !important;
 }
+
+#claim{
+    padding-bottom: env(safe-area-inset-bottom);
+}
+@supports (padding: max(0px)) {
+  #claim {
+    padding-bottom: max(env(safe-area-inset-bottom), 16px);
+  }
+}
