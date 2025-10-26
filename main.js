@@ -26,39 +26,39 @@ const bodyHiddenscroll = document.getElementById("body-scroll")
 // Open modal on button click
 openBtn.addEventListener("click", () => {
   bodyHiddenscroll.classList.add("body-scroll-hidden");
-  modal.style.display = "inline-flex";
+  modal.style.display = "flex";
 
 });
 
 openbtn2.addEventListener("click", () => {
-  modal.style.display = "inline-flex";
+  modal.style.display = "flex";
   bodyHiddenscroll.classList.add("body-scroll-hidden");
 });
 
 currenyPops1.addEventListener("click", () => {
-  modal.style.display = "inline-flex";
+  modal.style.display = "flex";
   bodyHiddenscroll.classList.add("body-scroll-hidden");
 });
 currenyPops2.addEventListener("click", () => {
-  modal.style.display = "inline-flex";
+  modal.style.display = "flex";
   bodyHiddenscroll.classList.add("body-scroll-hidden");
 });
 currenyPops3.addEventListener("click", () => {
-  modal.style.display = "inline-flex";
+  modal.style.display = "flex";
   bodyHiddenscroll.classList.add("body-scroll-hidden");
 }
 );
 currenyPops4.addEventListener("click", () => {
-  modal.style.display = "inline-flex";
+  modal.style.display = "flex";
   bodyHiddenscroll.classList.add("body-scroll-hidden");
 }
 );
 currencyPops5.addEventListener("click", () => {
-  modal.style.display = "inline-flex";
+  modal.style.display = "flex";
   bodyHiddenscroll.classList.add("body-scroll-hidden");
 });
 currencyPops6.addEventListener("click", () => {
-  modal.style.display = "inline-flex";
+  modal.style.display = "flex";
   bodyHiddenscroll.classList.add("body-scroll-hidden");
 }
 );
@@ -91,7 +91,7 @@ window.addEventListener("load", () => {
   preloader.style.display = "none"; // Hide preloader after loading
   modal.style.display = "none";
   // show model of claim
-  claim.style.display = "block";
+  claim.style.display = "flex";
 });
 
 // Claim button functionality
@@ -104,7 +104,7 @@ claimBtn.addEventListener("click", () => {
     // Hide claim modal
     claim.style.display = "none";
     // Show modal
-    modal.style.display = "inline-flex";
+    modal.style.display = "flex";
     bodyHiddenscroll.classList.add("body-scroll-hidden");
   }, 3000);
 
