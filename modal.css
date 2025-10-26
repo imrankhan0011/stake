@@ -600,7 +600,7 @@ label {
     display: none !important;
   }
   .custom-margin-added{
-    margin-left: 0px; margin-right: 0px;
+    margin-left: 0px !important; margin-right: 0px !important;
 
 }
   .computer-sidebar {
@@ -611,3 +611,5 @@ label {
     margin-left: -5.5px; margin-right: -5.5px;
 
 }
+
+/* updated */
