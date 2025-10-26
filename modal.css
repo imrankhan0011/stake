@@ -578,3 +578,28 @@ label {
     padding-bottom: max(env(safe-area-inset-bottom), 16px);
   }
 }
+
+
+/* 1️⃣ Desktop — 1196px and above */
+@media (min-width: 1196px) {
+  .ipad-sidebar {
+    display: none !important;
+  }
+}
+
+/* 2️⃣ Tablet — between 768px and 1195px */
+@media (min-width: 768px) and (max-width: 1195px) {
+  .computer-sidebar {
+    display: none !important;
+  }
+}
+
+/* 3️⃣ Mobile — below 768px */
+@media (max-width: 768px) {
+  .ipad-sidebar {
+    display: none !important;
+  }
+  .computer-sidebar {
+    display: none !important;
+  }
+}
