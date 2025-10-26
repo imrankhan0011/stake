@@ -589,6 +589,9 @@ label {
     display: none !important;
   }
 }
+.wrap.normal.svelte-10nnz84 {
+    max-width: 80px
+}
 
 /* 2️⃣ Tablet — between 768px and 1195px */
 @media (min-width: 768px) and (max-width: 1195px) {
@@ -603,13 +606,21 @@ label {
     display: none !important;
   }
   .custom-margin-added{
-    margin-left: 0px !important; margin-right: 0px !important;
+    margin-left: -3px !important; margin-right: -3px !important;
 
+}
+.wrap.normal.svelte-10nnz84 {
+    max-width: 100%
 }
   .computer-sidebar {
     display: none !important;
   }
+  .hero-content.svelte-12xljo5{
+    padding-top: 0 !important;
+  }
 }
 
-
+.wrap.mobile-logo.svelte-10nnz84>svg{
+    width: 26px;
+}
 /* updated */
