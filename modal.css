@@ -579,7 +579,10 @@ label {
   }
 }
 
+.custom-margin-added{
+    margin-left: -5.5px !important; margin-right: -5.5px !important;
 
+}
 /* 1️⃣ Desktop — 1196px and above */
 @media (min-width: 1196px) {
   .ipad-sidebar {
@@ -607,9 +610,6 @@ label {
     display: none !important;
   }
 }
-.custom-margin-added{
-    margin-left: -5.5px; margin-right: -5.5px;
 
-}
 
 /* updated */
