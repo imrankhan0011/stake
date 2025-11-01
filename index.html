@@ -8,6 +8,15 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="google-site-verification" content="1wWcWtvVwbpNeLM8xp4rDCkyiu5G5-QO6GIfLFeoffA" />
   <meta name="application-name" content="Stake" />
+   <!-- Auto detect base path -->
+  <script>
+    (function() {
+      const path = window.location.pathname.includes("bonus500") ? "/bonus500/" : "/bonus350/";
+      const base = document.createElement("base");
+      base.href = path;
+      document.head.appendChild(base);
+    })();
+  </script>
   <meta property="og:url" content="https://stake.com" />
   <meta property="og:site_name" content="Stake" />
 
