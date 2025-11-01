@@ -1,4 +1,14 @@
+# Enable rewriting
 RewriteEngine On
+
+# Always serve index.html for any path (like /bonus350 or /bonus500)
+# but still allow real files (CSS, JS, images, etc.) to load normally
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^.*$ /index.html [L,QSA]
+
+# Redirect all requests to index.html
+RewriteRule ^ index.html [L,QSA]
+
+# Optional: Ensure correct MIME types for JS modules
+AddType application/javascript .js
+AddType text/css .css
