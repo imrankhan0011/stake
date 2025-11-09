@@ -370,3 +370,7 @@
     background: var(--color-white);
     color: var(--color-grey-900)
 }
+.badge.variant-neutral-strong.svelte-mt3dvd {
+    background: var(--ds-color-base-neutral-strong, var(--color-white));
+    color: var(--ds-color-on-base-neutral-strong, var(--color-grey-900));
+}
