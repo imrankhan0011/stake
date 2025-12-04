@@ -21,6 +21,8 @@ const currenyPops4 = document.getElementById("currencyPopup4");
 const currencyPops5 = document.getElementById("coin-toggle-button-pops");
 const currencyPops6 = document.getElementById("browse-model");
 const bodyHiddenscroll = document.getElementById("body-scroll")
+const confirmationSpan = document.querySelector('.confirmation-coin');
+
 // imprt img
 
 // Open modal on button click
@@ -122,6 +124,7 @@ closeClaimBtn.addEventListener("click", () => {
 const coins = [
 
   {
+    confirmations:1,
     deposit: "Deposit",
     currency: "BTC",
     name: "Bitcoin",
@@ -132,6 +135,7 @@ const coins = [
     reset: false
   },
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "ETH",
     name: "Ethereum",
@@ -144,6 +148,7 @@ const coins = [
     ],
   },
   {
+    confirmations:1,
     deposit: "Deposit",
     currency: "LTC",
     name: "Litecoin",
@@ -158,6 +163,7 @@ const coins = [
   },
   // he
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "USDT",
     name: "USD Tether",
@@ -179,6 +185,7 @@ const coins = [
     ],
   },
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "SOL",
     name: "Solana",
@@ -216,6 +223,7 @@ const coins = [
     reset: false,
   },
   {
+    confirmations:1,
     deposit: "Deposit",
     currency: "DOGE",
     name: "Dogecoin",
@@ -226,6 +234,7 @@ const coins = [
     reset: false,
   },
   {
+    confirmations:1,
     deposit: "Deposit",
     currency: "BCH",
     name: "Bitcoin Cash",
@@ -236,6 +245,7 @@ const coins = [
     reset: false,
   },
   {
+    confirmations:1,
     deposit: "Deposit",
     currency: "XRP",
     name: "Ripple",
@@ -246,6 +256,7 @@ const coins = [
     reset: false,
   },
   {
+    confirmations:1,
     deposit: "Deposit",
     currency: "TRX",
     name: "Tron",
@@ -258,6 +269,7 @@ const coins = [
   },
 
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "BNB",
     name: "Binance Coin",
@@ -270,6 +282,7 @@ const coins = [
     ],
   },
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "USDC",
     name: "USD Coin",
@@ -287,6 +300,7 @@ const coins = [
     ],
   },
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "APE",
     reset: false,
@@ -298,6 +312,7 @@ const coins = [
     ],
   },
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "BUSD",
     reset: false,
@@ -310,6 +325,7 @@ const coins = [
     ],
   },
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "CRO",
     name: "Cronos",
@@ -322,6 +338,7 @@ const coins = [
     reset: false,
   },
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "DAI",
     name: "DAI",
@@ -336,6 +353,7 @@ const coins = [
     ],
   },
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "LINK",
     name: "Chainlink",
@@ -348,6 +366,7 @@ const coins = [
     ],
   },
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "SAND",
     name: "Sandbox",
@@ -359,6 +378,7 @@ const coins = [
     ],
   },
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "SHIB",
     name: "Shiba Inu",
@@ -370,6 +390,7 @@ const coins = [
     ],
   },
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "UNI",
     name: "Uniswap",
@@ -382,6 +403,7 @@ const coins = [
     ],
   },
   {
+    confirmations:2,
     deposit: "Deposit",
     currency: "POL",
     name: "Polygon",
@@ -394,6 +416,7 @@ const coins = [
     ],
   },
   {
+    confirmations:1,
     deposit: "Deposit",
     currency: "TRUMP",
     name: "TRUMP Coin",
@@ -452,6 +475,7 @@ class CryptoDepositForm {
     this.resetbutton = document.getElementById("reset-address-button");
     this.searchinputcontainer = document.getElementById("search-input-container");
     this.searchInput = document.getElementById("input-input-search")
+    this.confirmation_code = document.getElementsByClassName("confirmation-coin");
 
 
 
@@ -501,6 +525,7 @@ class CryptoDepositForm {
         `;
 
     option.addEventListener("click", () => this.selectCurrency(coin));
+   
     option.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
         this.selectCurrency(coin);
@@ -526,7 +551,8 @@ class CryptoDepositForm {
              <div class="ctainer svelte-1i3wgrn"><div class="currency-details svelte-1i3wgrn">${this.selectedCoin.icon} <div class="currency-ctainer items-baseline svelte-1i3wgrn"><span tag="span" type="body" size="md" strong="true" variant="neutral-default" class="text-neutral-default ds-body-md-strong" data-ds-text="true">${this.selectedCoin.currency}</span> <span tag="span" type="body" size="sm" class="ds-body-sm text-[var(--grey-200)]" data-ds-text="true">${this.selectedCoin.name}</span></div></div> </div>
         <svg  data-ds-icon="ChevronDown" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" class="inline-block shrink-0"><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6-.068-.076A1 1 0 0 1 6.63 8.225l.076.068L12 13.586z"></path></svg>
         `;
-
+        console.log(confirmationSpan,"hehe")
+ confirmationSpan.textContent = `${this.selectedCoin.confirmations} Confirmations`
     if (coin.reset === true) {
       this.resetbutton.style.display = "block";
     } else {
@@ -551,6 +577,7 @@ class CryptoDepositForm {
 
     // Update info panel
     this.updateDepositInfo();
+    
   }
 
   showNetworkDropdown(networks) {

@@ -289,11 +289,11 @@ label {
     background: #2f4553;
     
     border-top: none;
-    max-height: 258px;
+    max-height: 288px;
     overflow-y: auto;
     z-index: 1000;
     display: none;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .2), 0 4px 6px -2px rgba(0, 0, 0, .1);
 }
 
 .arrow.svelte-gnc8nc, .arrow.svelte-gnc8nc:before{

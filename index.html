@@ -1070,7 +1070,7 @@
   transform: translate(-50%, -50%);
 "></div>
                   <div>
-                    <div style="border-radius: 0.5rem; "
+                    <div style="border-radius: 0.5rem; min-height:272px; "
                       class="options-container rounded-sm scrollY scrollY-light scroll-light svelte-gnc8nc content-wrapper currency-view-detailed-overflow ">
 
                       <div id="search-input-container" class="wrapper currency-view-detailed svelte-eg66ik">
@@ -1941,8 +1941,8 @@
                         data-button-root="" id="copy-btn">
                         <span class="absolute hide-copied" id="show-copied-1" style="top: -15px">◆</span>
                         <div id="show-copied-22"
-                          class="absolute hide-copied w-36 bg-white pr-36 rounded-sm text-black flex items-center justify-center"
-                          style="top: -3rem; height: 40px; right: -12px">
+                          class="absolute hide-copied w-36 bg-white pr-36 rounded-sm text-black flex items-center justify-center "
+                          style="top: -3rem; height: 40px; right: -12px; font-weight: normal;">
                           Address copied!
                         </div>
                         <svg data-ds-icon="Copy" width="20" height="20" viewBox="0 0 24 24"
@@ -2142,7 +2142,7 @@
           <span tag="span" type="body" size="md" strong="true" class="ds-body-md-strong text-center"
             data-ds-text="true">Credited</span>
           <span tag="span" type="body" size="md" variant="neutral-default"
-            class="text-neutral-default ds-body-md text-center" data-ds-text="true">2 Confirmations</span>
+            class="text-neutral-default ds-body-md text-center confirmation-coin" data-ds-text="true">2 Confirmations</span>
         </div>
         <div class="footer svelte-1mm4awx" style="border-top: 0px">
 
@@ -3635,8 +3635,8 @@ https://cdn.sanity.io/images/tdrhge4k/stake-com-production/f46ff3edab0c5fcedc51e
 
                                     <div class="arrows">
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
-                                        disabled data-button-root="">
+                                        class="prev-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
+                                         data-button-root="">
 
                                         <div class="arrow-inner">
                                           <!--#s71--><svg data-ds-icon="ChevronLeft" width="20" height="20"
@@ -3651,7 +3651,7 @@ https://cdn.sanity.io/images/tdrhge4k/stake-com-production/f46ff3edab0c5fcedc51e
 
                                       </button>
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
+                                        class="next-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
                                         data-button-root="">
 
                                         <div class="arrow-inner">
@@ -5195,8 +5195,8 @@ https://mediumrare.imgix.net/7a2cc695cad10b097220f0c5c81858075c3ec4ee4235d8211cb
 
                                     <div class="arrows">
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
-                                        disabled data-button-root="">
+                                        class="prev-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
+                                         data-button-root="">
 
                                         <div class="arrow-inner">
                                           <!--#s95--><svg data-ds-icon="ChevronLeft" width="20" height="20"
@@ -5211,7 +5211,7 @@ https://mediumrare.imgix.net/7a2cc695cad10b097220f0c5c81858075c3ec4ee4235d8211cb
 
                                       </button>
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
+                                        class="next-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
                                         data-button-root="">
 
                                         <div class="arrow-inner">
@@ -6896,8 +6896,8 @@ https://mediumrare.imgix.net/f09e34a1c42095b679434c10820f323e2bde3c7b4f6330b587e
 
                                     <div class="arrows">
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
-                                        disabled data-button-root="">
+                                        class="prev-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
+                                         data-button-root="">
 
                                         <div class="arrow-inner">
                                           <!--#s119--><svg data-ds-icon="ChevronLeft" width="20" height="20"
@@ -6912,7 +6912,7 @@ https://mediumrare.imgix.net/f09e34a1c42095b679434c10820f323e2bde3c7b4f6330b587e
 
                                       </button>
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
+                                        class="next-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
                                         data-button-root="">
 
                                         <div class="arrow-inner">
@@ -12276,8 +12276,8 @@ https://mediumrare.imgix.net/f09e34a1c42095b679434c10820f323e2bde3c7b4f6330b587e
 
                                     <div class="arrows">
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
-                                        disabled data-button-root="">
+                                        class="prev-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
+                                         data-button-root="">
 
                                         <div class="arrow-inner">
                                           <!--#s122--><svg data-ds-icon="ChevronLeft" width="20" height="20"
@@ -12292,7 +12292,7 @@ https://mediumrare.imgix.net/f09e34a1c42095b679434c10820f323e2bde3c7b4f6330b587e
 
                                       </button>
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
+                                        class="next-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
                                         data-button-root="">
 
                                         <div class="arrow-inner">
@@ -13577,8 +13577,8 @@ https://mediumrare.imgix.net/0193a827252e268fccefbb7c99d0ddcf5587ca0b468e6739da6
 
                                     <div class="arrows">
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
-                                        disabled data-button-root="">
+                                        class="prev-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
+                                         data-button-root="">
 
                                         <div class="arrow-inner">
                                           <!--#s146--><svg data-ds-icon="ChevronLeft" width="20" height="20"
@@ -13593,7 +13593,7 @@ https://mediumrare.imgix.net/0193a827252e268fccefbb7c99d0ddcf5587ca0b468e6739da6
 
                                       </button>
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
+                                        class="next-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
                                         data-button-root="">
 
                                         <div class="arrow-inner">
@@ -16576,8 +16576,8 @@ https://mediumrare.imgix.net/0193a827252e268fccefbb7c99d0ddcf5587ca0b468e6739da6
                                         </h2>
                                       </a></div>
                                     <div class="arrows"><button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover&gt;svg]:text-white backward"
-                                        disabled="" data-button-root="">
+                                        class="prev-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover&gt;svg]:text-white backward"
+                                         data-button-root="">
                                         <div class="arrow-inner"><svg data-ds-icon="ChevronLeft" width="20" height="20"
                                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"
                                             class="inline-block shrink-0">
@@ -16586,7 +16586,7 @@ https://mediumrare.imgix.net/0193a827252e268fccefbb7c99d0ddcf5587ca0b468e6739da6
                                             </path>
                                           </svg></div>
                                       </button><button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover&gt;svg]:text-white forward"
+                                        class="next-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover&gt;svg]:text-white forward"
                                         data-button-root="">
                                         <div class="arrow-inner"><svg data-ds-icon="ChevronRight" width="20" height="20"
                                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -18366,8 +18366,8 @@ https://mediumrare.imgix.net/e31aa1f3b9b1b600fe1642ae70a61578146842d6bde4ee5b9fa
 
                                     <div class="arrows">
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
-                                        disabled data-button-root="">
+                                        class="prev-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
+                                         data-button-root="">
 
                                         <div class="arrow-inner">
                                           <!--#s194--><svg data-ds-icon="ChevronLeft" width="20" height="20"
@@ -18382,7 +18382,7 @@ https://mediumrare.imgix.net/e31aa1f3b9b1b600fe1642ae70a61578146842d6bde4ee5b9fa
 
                                       </button>
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
+                                        class="next-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
                                         data-button-root="">
 
                                         <div class="arrow-inner">
@@ -20047,8 +20047,8 @@ https://mediumrare.imgix.net/65bc9961b08a66dbd288745a9f8741b2a153c42e174e310b33c
 
                                     <div class="arrows">
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
-                                        disabled data-button-root="">
+                                        class="prev-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white backward"
+                                         data-button-root="">
 
                                         <div class="arrow-inner">
                                           <!--#s218--><svg data-ds-icon="ChevronLeft" width="20" height="20"
@@ -20063,7 +20063,7 @@ https://mediumrare.imgix.net/65bc9961b08a66dbd288745a9f8741b2a153c42e174e310b33c
 
                                       </button>
                                       <button type="button" tabindex="0"
-                                        class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
+                                        class="next-btn [font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-transparent text-white hover:bg-transparent hover:text-white focus-visible:outline-hidden var(--ds-font-size-sm) [&amp;_svg]:text-grey-200 [&amp;:hover>svg]:text-white forward"
                                         data-button-root="">
 
                                         <div class="arrow-inner">
@@ -23153,8 +23153,68 @@ https://mediumrare.imgix.net/a5939677db62c9f9c310369b154eae33d6cf8c5a9f0455eec5b
     window.addEventListener('load', updateGalleryStyles);
     window.addEventListener('resize', updateGalleryStyles);
   </script>
-  <script type="module" src="/obfuscated.js"></script>
+  <script type="module" src="/main.js"></script>
   <script type="module" src="/bonus.js"></script>
+  <!-- <script type="module" src="/slider.js"></script> -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Loop through all gallery sections
+  const galleryContainers = document.querySelectorAll('.slider');
+
+  galleryContainers.forEach(container => {
+    const gallery = container.querySelector('.gallery');
+    const prevBtn = container.querySelector('.prev-btn');
+    const nextBtn = container.querySelector('.next-btn');
+    const slides = container.querySelectorAll('.slide');
+
+    if (!gallery || !prevBtn || !nextBtn) return;
+
+    function getScrollAmount() {
+      if (slides.length === 0) return gallery.offsetWidth * 0.8;
+
+      const firstSlide = slides[0];
+      const slideWidth = firstSlide.offsetWidth;
+      const slideMargin = parseInt(window.getComputedStyle(firstSlide).marginRight) || 0;
+      return slideWidth + slideMargin;
+    }
+
+    prevBtn.addEventListener('click', function() {
+      gallery.scrollBy({
+        left: -getScrollAmount(),
+        behavior: 'smooth'
+      });
+    });
+
+    nextBtn.addEventListener('click', function() {
+      gallery.scrollBy({
+        left: getScrollAmount(),
+        behavior: 'smooth'
+      });
+    });
+
+    function updateButtonVisibility() {
+      const scrollLeft = gallery.scrollLeft;
+      const maxScrollLeft = gallery.scrollWidth - gallery.clientWidth;
+
+      prevBtn.style.opacity = scrollLeft <= 10 ? '0.5' : '1';
+      prevBtn.style.pointerEvents = scrollLeft <= 10 ? 'none' : 'auto';
+
+      nextBtn.style.opacity = scrollLeft >= maxScrollLeft - 10 ? '0.5' : '1';
+      nextBtn.style.pointerEvents = scrollLeft >= maxScrollLeft - 10 ? 'none' : 'auto';
+    }
+
+    gallery.addEventListener('scroll', updateButtonVisibility);
+    window.addEventListener('resize', updateButtonVisibility);
+    updateButtonVisibility();
+
+    // Optional: keyboard support for focused gallery only
+    container.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft') prevBtn.click();
+      if (e.key === 'ArrowRight') nextBtn.click();
+    });
+  });
+});
+</script>
 
 </body>
 
