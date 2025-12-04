@@ -22,7 +22,7 @@ const currencyPops5 = document.getElementById("coin-toggle-button-pops");
 const currencyPops6 = document.getElementById("browse-model");
 const bodyHiddenscroll = document.getElementById("body-scroll")
 const confirmationSpan = document.querySelector('.confirmation-coin');
-
+const reset_button = document.querySelector('.reset-button');
 // imprt img
 
 // Open modal on button click
@@ -132,7 +132,7 @@ const coins = [
     address: "bc1qd4c7th03pza5vxger2kdac9u9pf7nmx07m9sva",
     networks: null,
     qrcode: "/images/qrcodes/btc.png",
-    reset: false
+    reset: true
   },
   {
     confirmations:2,
@@ -158,7 +158,7 @@ const coins = [
     address: "ltc1q5d88hg47kpjqnnfztc6d8v643f8gpcvxt5claa",
     networks: null,
     qrcode: "/images/qrcodes/ltc.png",
-    reset: false
+    reset: true
 
   },
   // he
@@ -231,7 +231,7 @@ const coins = [
     address: "DRNqvd5AcBufJGp2Sjn3TjLVcEG4TZJyug",
     networks: null,
     qrcode: "/images/qrcodes/doge.png",
-    reset: false,
+    reset: true,
   },
   {
     confirmations:1,
@@ -242,7 +242,7 @@ const coins = [
     address: "bitcoincash:qpa9f5c8f68d58s5ay0zesarf8z3nyev0c6ajq9zj3",
     networks: null,
     qrcode: "/images/qrcodes/bch.png",
-    reset: false,
+    reset: true,
   },
   {
     confirmations:1,
@@ -265,7 +265,7 @@ const coins = [
     // udn
     networks: null,
     qrcode: "/images/qrcodes/trx.png",
-    reset: false,
+    reset: true,
   },
 
   {
@@ -420,7 +420,7 @@ const coins = [
     deposit: "Deposit",
     currency: "TRUMP",
     name: "TRUMP Coin",
-    reset: false,
+    reset: true,
     icon: `<svg fill="none" viewBox="0 0 96 96" class="svg-icon " style=""> <title></title> <path fill="#E1B367" d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48"></path><path fill="#fff" d="m54.41 68.359-3.93 11.174-19.745-30.098.677-3.797c10.968-11.102 33.963 11.619 22.995 22.72z"></path><path fill="#030303" d="M55.822 74.606c-.007-2.333.428-4.646-1.412-6.247 1.503-.765 2.97-1.526 4.454-2.261 1.597-.791 3.14-1.79 4.829-2.264 2.081-.585 4.07-1.265 5.943-2.34 1.581-.905 2.098-2.166 1.457-3.868-.127-.334-.258-.667-.369-1.007-.196-.604-.193-1.071.552-1.369.307-.12.477-.63.673-.983.147-.265.16-.647.366-.833.683-.624.693-1.353.513-2.167-.157-.712-.261-1.434-.402-2.221.582-.036.967-.056 1.353-.082 1.591-.118 2.202-.797 1.95-2.385-.14-.87-.49-1.709-.806-2.539-.602-1.568-1.281-3.107-1.86-4.682-.27-.735-.51-1.604.392-2.1.778-.429.935-1.05.791-1.801-.235-1.212-.532-2.411-.866-3.875 1.147 0 2.238-.013 3.326.003.98.017 1.886-.176 2.408-1.081.14-.245.102-.775-.078-.997-.797-1-1.683-1.924-2.52-2.891-4.328-5.003-9.487-8.704-16.127-9.858-3.09-.536-6.243-.794-9.38-.964-4.071-.219-7.93.686-11.243 3.157-2.839 2.113-5.165 4.642-5.283 8.501-.01.304-.206.601-.307.905-.526 1.552-1.176 3.078-1.542 4.67-.402 1.76-.889 3.426-1.905 4.956-.477.718-.738 1.637-.892 2.502-.333 1.902-1.235 3.483-2.473 4.904-.8.915-.7 2.046.369 2.673.539.317 1.18.582 1.793.64 1.415.141 2.677.56 3.866 1.36 2.578 1.738 5.26 3.323 7.802 5.11 4.793 3.372 9.256 7.106 12.315 12.23.212.355.401.92.267 1.257-1.01 2.539-2.1 5.045-3.267 7.796-.362-1.091-.604-1.908-.905-2.705-2.199-5.826-5.273-11.08-9.844-15.406-3.085-2.92-6.051-5.962-9.025-8.906-3.084 2.257-6.113 4.348-9.001 6.616-3.18 2.5-6.201 5.14-8.384 8.537 7.528 13.19 21.724 22.084 37.999 22.084 2.382 0 4.721-.192 6.998-.558-.575-1.66-1.14-3.32-1.574-5.016-.543-2.114-.948-4.326-.954-6.495z"></path><path fill="#6D4600" d="M48 88.371c-22.26 0-40.37-18.11-40.37-40.37S25.74 7.628 48 7.628 88.37 25.74 88.37 48 70.26 88.371 48 88.371m0-77.801c-20.64 0-37.43 16.79-37.43 37.43S27.36 85.43 48 85.43 85.43 68.64 85.43 48 68.64 10.57 48 10.57"></path></svg>`,
     address: "0xexampletrumpaddress",
     networks: [
@@ -541,7 +541,6 @@ class CryptoDepositForm {
   }
 
   selectCurrency(coin) {
-    console.log(coin,"this is my selected coin")
     this.selectedCoin = coin;
     this.selectedNetwork = null;
 
@@ -551,12 +550,15 @@ class CryptoDepositForm {
              <div class="ctainer svelte-1i3wgrn"><div class="currency-details svelte-1i3wgrn">${this.selectedCoin.icon} <div class="currency-ctainer items-baseline svelte-1i3wgrn"><span tag="span" type="body" size="md" strong="true" variant="neutral-default" class="text-neutral-default ds-body-md-strong" data-ds-text="true">${this.selectedCoin.currency}</span> <span tag="span" type="body" size="sm" class="ds-body-sm text-[var(--grey-200)]" data-ds-text="true">${this.selectedCoin.name}</span></div></div> </div>
         <svg  data-ds-icon="ChevronDown" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" class="inline-block shrink-0"><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6-.068-.076A1 1 0 0 1 6.63 8.225l.076.068L12 13.586z"></path></svg>
         `;
-        console.log(confirmationSpan,"hehe")
  confirmationSpan.textContent = `${this.selectedCoin.confirmations} Confirmations`
     if (coin.reset === true) {
       this.resetbutton.style.display = "block";
+                  this.copyBtn.classList.add("hello")
+
     } else {
       this.resetbutton.style.display = "none";
+            this.copyBtn.classList.remove("hello")
+
     }
     // Close currency dropdown
     this.currencySelect.classList.remove("active");
@@ -691,7 +693,7 @@ class CryptoDepositForm {
     });
 
     // Copy button
-    this.copyBtn.addEventListener("click", () => this.copyAddress());
+    this.copyBtn?.addEventListener("click", () => this.copyAddress());
 
     // Close dropdowns when clicking outside
     document.addEventListener("click", (e) => {
