@@ -70,7 +70,7 @@
 .arrow.svelte-ddw4y1,.arrow.svelte-ddw4y1:before {
     position: absolute;
     width: 8px;
-    height: 8px;
+    height: 10px;
     background: inherit;
     background: var(--arrow-color)
 }

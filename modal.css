@@ -56,7 +56,7 @@
 }
 label {
     display: block;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     color: #4a5568;
     font-weight: 500;
     font-size: 14px;
@@ -282,7 +282,7 @@ label {
 
 .options-container {
     position: absolute;
-    top: 116%;
+   
     left: 0;
     right: 0;
     background: #2f4553;
@@ -294,7 +294,12 @@ label {
     display: none;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .2), 0 4px 6px -2px rgba(0, 0, 0, .1);
 }
-
+.options-container1{
+ top: 115%;
+}
+.options-container2{
+     top: 120%;
+}
 .arrow.svelte-gnc8nc, .arrow.svelte-gnc8nc:before{
     background-color: #2f4553 !important;
     /* top: 34px !important; */
@@ -325,6 +330,7 @@ label {
     gap: 12px;
     /* padding: 12px 16px; */
     cursor: pointer;
+    color: white;
 }
 
 .option:hover {
@@ -572,8 +578,19 @@ label {
     width: 20px;
     height: 20px;
 }
-.show-copied-1{
+#show-copied-1::before{
+    content: "";
     color: white !important;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: inherit;
+    background: white;
+    content: "";
+    transform: rotate(45deg);
+    z-index: 9;
+    bottom: -12px;
+    
 }
 
 #claim{
