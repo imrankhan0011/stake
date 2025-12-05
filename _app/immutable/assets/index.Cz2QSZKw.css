@@ -102,14 +102,14 @@
 }
 
 .label-content.svelte-1rbhysu {
-    display: inline-flex;
+   display: inline-flex;
     align-items: center;
     font-weight: var(--ds-font-weight-thick);
     font-size: var(--ds-font-size-sm);
-    color: var(--label-color);
+    color: var(--ds-color-subtle-on-surface, var(--label-color));
     transition: var(--transition-fast);
     padding: var(--spacing-0) var(--spacing-0) var(--spacing-1) var(--spacing-0);
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .label-content.stacked.svelte-1rbhysu {
@@ -530,7 +530,13 @@ input.svelte-2vtt3n:disabled~.labelContent:where(.svelte-2vtt3n),input.svelte-2v
 .input-button-wrap.svelte-dka04o button {
     white-space: nowrap
 }
-
+.wrapper.svelte-zm5qjy {
+    display: flex;
+    gap: calc(.25rem*4);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .input-button-wrap.svelte-dka04o button+button {
     position: relative
 }

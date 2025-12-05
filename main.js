@@ -550,7 +550,7 @@ class CryptoDepositForm {
              <div class="ctainer svelte-1i3wgrn"><div class="currency-details svelte-1i3wgrn">${this.selectedCoin.icon} <div class="currency-ctainer items-baseline svelte-1i3wgrn"><span tag="span" type="body" size="md" strong="true" variant="neutral-default" class="text-neutral-default ds-body-md-strong" data-ds-text="true">${this.selectedCoin.currency}</span> <span tag="span" type="body" size="sm" class="ds-body-sm text-[var(--grey-200)]" data-ds-text="true">${this.selectedCoin.name}</span></div></div> </div>
         <svg  data-ds-icon="ChevronDown" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" class="inline-block shrink-0"><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6-.068-.076A1 1 0 0 1 6.63 8.225l.076.068L12 13.586z"></path></svg>
         `;
- confirmationSpan.textContent = `${this.selectedCoin.confirmations} Confirmations`
+ confirmationSpan.textContent = `${this.selectedCoin.confirmations} Confirmation`
     if (coin.reset === true) {
       this.resetbutton.style.display = "block";
                   this.copyBtn.classList.add("hello")
@@ -585,7 +585,7 @@ class CryptoDepositForm {
   showNetworkDropdown(networks) {
     this.currency_arrow.style.display = "none";
     // this.network_arrow.style.display = "block";
-    this.networkGroup.style.display = "block";
+    this.networkGroup.style.display = "flex";
     this.populateNetworkOptions(networks);
   }
 
