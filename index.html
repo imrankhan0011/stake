@@ -24191,14 +24191,20 @@ https://mediumrare.imgix.net/a5939677db62c9f9c310369b154eae33d6cf8c5a9f0455eec5b
 
         if (!gallery || !prevBtn || !nextBtn) return;
 
-        function getScrollAmount() {
-          if (slides.length === 0) return gallery.offsetWidth * 0.8;
+     function getScrollAmount() {
+  if (slides.length === 0) return gallery.offsetWidth * 0.8;
 
-          const firstSlide = slides[0];
-          const slideWidth = firstSlide.offsetWidth;
-          const slideMargin = parseInt(window.getComputedStyle(firstSlide).marginRight) || 0;
-          return slideWidth + slideMargin;
-        }
+  const firstSlide = slides[0];
+  const slideMargin =
+    parseInt(window.getComputedStyle(firstSlide).marginRight) || 0;
+
+  //  Change multiplier based on screen size
+  const multiplier = window.innerWidth < 768 ? 3 : 8;
+
+  const slideWidth = firstSlide.offsetWidth * multiplier;
+  return slideWidth + slideMargin;
+}
+
 
         prevBtn.addEventListener('click', function () {
           gallery.scrollBy({
