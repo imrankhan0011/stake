@@ -295,10 +295,10 @@ label {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .2), 0 4px 6px -2px rgba(0, 0, 0, .1);
 }
 .options-container1{
- top: 115%;
+ top: 114%;
 }
 .options-container2{
-     top: 120%;
+     top: 121%;
 }
 .arrow.svelte-gnc8nc, .arrow.svelte-gnc8nc:before{
     background-color: #2f4553 !important;
@@ -583,7 +583,7 @@ label {
     color: white !important;
     position: absolute;
     width: 8px;
-    height: 8px;
+    height: 11px;
     background: inherit;
     background: white;
     content: "";

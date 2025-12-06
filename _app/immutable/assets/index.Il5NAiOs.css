@@ -69,16 +69,23 @@
 }
 
 .dropdown-scroll-content.svelte-sd56x {
-        display: flex;
+    display: flex;
     flex-direction: column;
     padding: var(--spacing-1) var(--spacing-0);
-    max-width: 100vw;
+    max-width: 100vw
 }
 
 .arrow.svelte-sd56x,.arrow.svelte-sd56x:before {
     position: absolute;
     width: 8px;
     height: 8px;
+    background: inherit;
+    background: var(--arrow-color)
+}
+.arrow.svelte-sd56x,.arrow.svelte-sd56x:before {
+    position: absolute;
+    width: 8px;
+    height: 11px;
     background: inherit;
     background: var(--arrow-color)
 }
