@@ -675,3 +675,7 @@ label {
     .rotate_chevron{
       transform: rotate(180deg);
     }
+
+    img.svelte-hqfus1, svg.svelte-hqfus1 {
+image-rendering: pixelated !important;
+}
