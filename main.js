@@ -4,7 +4,6 @@ const showalertmessage = document.getElementById("showalertmessage");
 const showalertbtn1 = document.getElementById("show-copied-11");
 const showalertbtn2 = document.getElementById("show-copied-alert")
 
-
 const openBtn = document.getElementById("openModalBtn");
 const openbtn2 = document.getElementById("openModalBtn2")
 const closeBtn = document.getElementById("closeModalBtn");
@@ -23,6 +22,9 @@ const currencyPops6 = document.getElementById("browse-model");
 const bodyHiddenscroll = document.getElementById("body-scroll")
 const confirmationSpan = document.querySelector('.confirmation-coin');
 const reset_button = document.querySelector('.reset-button');
+const chevrown_down = document.getElementsByClassName("chevrown-down")
+const chevrown_down2 = document.getElementsByClassName("chevrown-down2")
+
 // imprt img
 
 // Open modal on button click
@@ -578,7 +580,7 @@ class CryptoDepositForm {
     const selectDisplay = this.currencySelect.querySelector(".select-display");
     selectDisplay.innerHTML = `
              <div class="ctainer svelte-1i3wgrn"><div class="currency-details svelte-1i3wgrn">${this.selectedCoin.icon} <div class="currency-ctainer items-baseline svelte-1i3wgrn"><span tag="span" type="body" size="md" strong="true" variant="neutral-default" class="text-neutral-default ds-body-md-strong" data-ds-text="true">${this.selectedCoin.currency}</span> <span tag="span" type="body" size="sm" class="ds-body-sm text-[var(--grey-200)]" data-ds-text="true">${this.selectedCoin.name}</span></div></div> </div>
-        <svg  data-ds-icon="ChevronDown" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" class="inline-block shrink-0"><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6-.068-.076A1 1 0 0 1 6.63 8.225l.076.068L12 13.586z"></path></svg>
+        <svg  data-ds-icon="ChevronDown" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" class="inline-block shrink-0 chevrown-down"><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6-.068-.076A1 1 0 0 1 6.63 8.225l.076.068L12 13.586z"></path></svg>
         `;
  confirmationSpan.textContent = `${this.selectedCoin.confirmations} ${this.selectedCoin.confirmations > 1 ? "Confirmations" : "Confirmation"}`
     if (coin.reset === true) {
@@ -645,7 +647,7 @@ class CryptoDepositForm {
 
             <button style="width: 100%;" type="button" tabindex="0"
            
-             class="[font-family:var(--ds-font-family-default)] [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-(--ds-opacity-disabled,0.5) focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] focus-visible:outline-(--ds-color-focus-ring-outer,var(--color-white)) state-layer-base bg-(--ds-color-base-neutral,var(--color-grey-400)) text-(--ds-color-on-base-neutral,var(--color-white)) not-prime-active:hover:bg-grey-300 not-prime-active:hover:text-white var(--ds-font-size-sm) justify-start rounded-none shadow-none p-4"
+             class="[font-family:var(--ds-font-family-default)] button-hover [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-(--ds-opacity-disabled,0.5) focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] focus-visible:outline-(--ds-color-focus-ring-outer,var(--color-white)) state-layer-base bg-(--ds-color-base-neutral,var(--color-grey-400)) text-(--ds-color-on-base-neutral,var(--color-white)) not-prime-active:hover:bg-grey-300 not-prime-active:hover:text-white var(--ds-font-size-sm) justify-start rounded-none shadow-none p-4"
               data-testid="chain-toggle-eth" aria-label="Select eth" data-button-root=""
              >${network.fullname}</button>
         `;
@@ -665,8 +667,8 @@ class CryptoDepositForm {
     // Update network display
     const selectDisplay = this.networkSelect.querySelector(".select-display");
     selectDisplay.innerHTML = `
-        <div class="flex items-center h-6"><span type="body" tag="span" size="md" strong="true" class="ds-body-md-strong" data-ds-text="true">${network.name}</span></div>
-          <svg data-ds-icon="ChevronDown" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" class="inline-block shrink-0"><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6-.068-.076A1 1 0 0 1 6.63 8.225l.076.068L12 13.586z"></path></svg>
+        <div class="flex items-center h-6"><span type="body" tag="span" size="md" strong="true" class=" ds-body-md-strong" data-ds-text="true">${network.name}</span></div>
+          <svg data-ds-icon="ChevronDown" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" class="chevrown-down2 inline-block shrink-0"><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6-.068-.076A1 1 0 0 1 6.63 8.225l.076.068L12 13.586z"></path></svg>
             
         `;
 
@@ -754,36 +756,52 @@ class CryptoDepositForm {
     });
   }
 
-  toggleDropdown(dropdown) {
-    const isOpening = !dropdown.classList.contains("active");
 
-    // Hide both arrows first
-    this.currency_arrow.style.display = "none";
-    this.network_arrow.style.display = "none";
+toggleDropdown(dropdown) {
+  const isOpening = !dropdown.classList.contains("active");
 
-    // Close all dropdowns
-    document.querySelectorAll(".custom-select").forEach((select) => {
-      select.classList.remove("active");
-      select.setAttribute("aria-expanded", "false");
-    });
+  // Hide both arrow wrappers
+  this.currency_arrow.style.display = "none";
+  this.network_arrow.style.display = "none";
 
-    if (isOpening) {
-      // Show the correct arrow depending on which dropdown was clicked
-      if (dropdown.classList.contains("currency-selection")) {
-        this.currency_arrow.style.display = "block";
-      } else {
-        this.network_arrow.style.display = "block";
-      }
+  // Close all dropdowns and remove active/aria
+  document.querySelectorAll(".custom-select").forEach((select) => {
+    select.classList.remove("active");
+    select.setAttribute("aria-expanded", "false");
+  });
 
-      dropdown.classList.add("active");
-      dropdown.setAttribute("aria-expanded", "true");
+  // Remove rotate from any chevrons (both variants)
+  document.querySelectorAll(".chevrown-down, .chevron-down, .chevrown-down2").forEach(ch => {
+    ch.classList.remove("rotate_chevron");
+  });
 
-      setTimeout(() => {
-        const firstOption = dropdown.querySelector(".option");
-        if (firstOption) firstOption.focus();
-      }, 0);
+  if (isOpening) {
+    // Show the correct arrow wrapper
+    if (dropdown.classList.contains("currency-selection")) {
+      this.currency_arrow.style.display = "block";
+    } else {
+      this.network_arrow.style.display = "block";
     }
+
+    // Add active + aria
+    dropdown.classList.add("active");
+    dropdown.setAttribute("aria-expanded", "true");
+
+    // Find the chevron element that belongs to this dropdown and rotate it
+    const chevron = dropdown.querySelector(".chevrown-down, .chevron-down, .chevrown-down2");
+    if (chevron) {
+      chevron.classList.add("rotate_chevron");
+    } else {
+      console.warn("No chevron found inside dropdown — check class names");
+    }
+
+    setTimeout(() => {
+      const firstOption = dropdown.querySelector(".option");
+      if (firstOption) firstOption.focus();
+    }, 0);
   }
+}
+
 
   async copyAddress() {
     if (this.addressInput.value) {
