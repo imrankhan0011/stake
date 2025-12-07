@@ -583,9 +583,11 @@ class CryptoDepositForm {
  confirmationSpan.textContent = `${this.selectedCoin.confirmations} ${this.selectedCoin.confirmations > 1 ? "Confirmations" : "Confirmation"}`
     if (coin.reset === true) {
       this.resetbutton.style.display = "flex";
+      this.copyBtn.classList.add("hello")
 
     } else {
       this.resetbutton.style.display = "none";
+      this.copyBtn.classList.remove("hello")
 
     }
     // Close currency dropdown

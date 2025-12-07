@@ -541,6 +541,15 @@ input.svelte-2vtt3n:disabled~.labelContent:where(.svelte-2vtt3n),input.svelte-2v
     position: relative
 }
 
+.hello:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background: var(--input-button-divider);
+    left: -1px;
+    top: 25%;
+    bottom: 25%;
+}
 
 .input-button-wrap.svelte-dka04o button:last-child {
     border-bottom-left-radius: 0;
