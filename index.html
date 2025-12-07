@@ -1952,14 +1952,14 @@
                             clip-rule="evenodd"></path>
                         </svg>
                       </button>
-           <button type="button" tabindex="0" style="
+           <button id="copy-btn-tooltip" type="button" tabindex="0" style="
 border-end-end-radius: 0.5rem;
 border-start-end-radius: 0.5rem;
 z-index: 999;
 display: flex;
 padding: 13px 16px;
 "
-                    class="hello line-div inline-flex relative items-center gap-2 justify-center rounded-sm font-semibold whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-grey-400 text-white hover:bg-grey-300 hover:text-white focus-visible:outline-white text-sm leading-none py-[0.8125rem] px-[1rem] shadow-none"
+                    class=" line-div inline-flex relative items-center gap-2 justify-center rounded-sm font-semibold whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-grey-400 text-white hover:bg-grey-300 hover:text-white focus-visible:outline-white text-sm leading-none py-[0.8125rem] px-[1rem] shadow-none"
                     data-button-root="" id="copy-btn">
                     <span class="absolute hide-copied" id="show-copied-1" style="top: -16px"></span>
                     <div id="show-copied-22"
@@ -24225,6 +24225,26 @@ https://mediumrare.imgix.net/a5939677db62c9f9c310369b154eae33d6cf8c5a9f0455eec5b
           if (e.key === 'ArrowRight') nextBtn.click();
         });
       });
+    });
+  </script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+
+  <script>
+    const instance = tippy('#copy-btn-tooltip', {
+      content: 'Address Copied!',
+      trigger: 'click',
+      placement: 'top',
+theme: 'custom-white',
+      hideOnClick: false
+    });
+
+    document.getElementById('copy-btn-tooltip').addEventListener('click', () => {
+      instance[0].show();   // show tooltip manually
+
+      setTimeout(() => {
+        instance[0].hide(); // ✅ hide after 2 seconds
+      }, 2000);
     });
   </script>
  <!-- <script>

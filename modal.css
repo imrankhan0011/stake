@@ -647,3 +647,23 @@ label {
     width: 26px;
 }
 /* updated */
+
+
+
+ /* ✅ Custom White Theme */
+    .tippy-box[data-theme~='custom-white'] {
+      background-color: #ffffff;
+      color: #000;
+      width: 131.73px;        /* ✅ your width */
+      height: 44px;        /* ✅ your height */
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tippy-box[data-theme~='custom-white'] .tippy-arrow {
+      color: #ffffff;
+    }

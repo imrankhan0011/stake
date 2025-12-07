@@ -495,7 +495,7 @@ class CryptoDepositForm {
     this.networkOptions = document.getElementById("network-options");
     this.addressInput = document.getElementById("address-input");
     this.qrcodeimg = document.getElementById("qrcode-img");
-    this.copyBtn = document.getElementById("copy-btn");
+    this.copyBtn = document.getElementById("copy-btn-tooltip");
     this.depositInfo = document.getElementById("deposit-info");
     this.selectedCurrencySpan = document.getElementById("selected-currency");
     this.selectedNetworkSpan = document.getElementById("selected-network");
@@ -583,11 +583,9 @@ class CryptoDepositForm {
  confirmationSpan.textContent = `${this.selectedCoin.confirmations} ${this.selectedCoin.confirmations > 1 ? "Confirmations" : "Confirmation"}`
     if (coin.reset === true) {
       this.resetbutton.style.display = "flex";
-                  this.copyBtn.classList.add("hello")
 
     } else {
       this.resetbutton.style.display = "none";
-            this.copyBtn.classList.remove("hello")
 
     }
     // Close currency dropdown
@@ -789,7 +787,7 @@ class CryptoDepositForm {
     if (this.addressInput.value) {
       try {
         await navigator.clipboard.writeText(this.addressInput.value);
-        this.showCopySuccess();
+        
       } catch (err) {
         // Fallback for older browsers
         this.fallbackCopyTextToClipboard(this.addressInput.value);
@@ -810,31 +808,13 @@ class CryptoDepositForm {
 
     try {
       document.execCommand("copy");
-      this.showCopySuccess();
+    
     } catch (err) {
       console.error("Fallback: Oops, unable to copy", err);
     }
 
     document.body.removeChild(textArea);
   }
-showCopySuccess() {
-  console.log(this.showCopied);
-  console.log(this.showCopied2);
-
-  // Show both
-  this.showCopied.classList.remove("hide-copied");
-  this.showCopied2.classList.remove("hide-copied");
-
-  // Hide both after 2 seconds
-  setTimeout(() => {
-    this.showCopied.classList.add("hide-copied");
-    this.showCopied2.classList.add("hide-copied");
-
-    console.log("Hiding both...");
-    console.log(this.showCopied);
-    console.log(this.showCopied2);
-  }, 2000);
-}
 
 
 }
