@@ -683,8 +683,10 @@ class CryptoDepositForm {
     this.updateQRCode(network.qrcode);
     if(network.reset===true){
       this.resetbutton.style.display="flex";
+      this.copyBtn.classList.add("hello")
     }else{
       this.resetbutton.style.display = "none"
+      this.copyBtn.classList.remove("hello")
     }
 
     // Update info panel
