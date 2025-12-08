@@ -2007,7 +2007,12 @@ padding: 13px 16px;
             class="[font-family:var(--ds-font-family-default)] relative [font-variant-numeric:var(--ds-font-variant-numeric,lining-nums_tabular-nums)] [font-feature-settings:var(--ds-font-feature-settings,&quot;salt&quot;_on)] inline-flex relative items-center gap-2 justify-center rounded-(--ds-radius-md,0.25rem) [font-weight:var(--ds-font-weight-thick)] whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.98] bg-grey-400 text-white hover:bg-grey-300 hover:text-white focus-visible:outline-white var(--ds-font-size-sm) shadow-md py-[0.5rem] px-[1rem] w-full"
             data-button-root="" id="showalertmessage">
           
-
+<span class="absolute hide-alert" id="show-copied-11" style="top: -19px;">◆</span>
+            <div id="show-copied-alert"
+              class="nodepositeavaliabe hide-alert absolute w-36 bg-white pr-36 rounded-sm text-black flex items-center justify-center"
+              style="font-weight:500; right: 0;left: 0;height: 39px; /* right: 118px; */top: -26px;display: flex;align-items: center;justify-content: center;transform: translate(-50% -50%);transform: translate(-50%, -50%);left: 50%;right: 50%;">
+               Unavailable for Deposit bonus!
+            </div>
             <div data-loader-content="true" class="contents">
               <div class="flex w-full justify-between items-center">
                 <span tag="span" type="body" size="md" variant="neutral-default" strong="true"
@@ -24243,20 +24248,20 @@ theme: 'custom-white',
       }, 2000);
     });
   </script>
-   <script>
-    const instance1 = tippy('#showalertmessage', {
-      content: 'Not available for Deposit Bonus!',
+ <script>
+    const instance2 = tippy('#reset-address-button', {
+      content: 'Unavailable',
       trigger: 'click',
       placement: 'top',
 theme: 'custom-white',
       hideOnClick: false
     });
 
-    document.getElementById('showalertmessage').addEventListener('click', () => {
-      instance1[0].show();   // show tooltip manually
+    document.getElementById('reset-address-button').addEventListener('click', () => {
+      instance2[0].show();   // show tooltip manually
 
       setTimeout(() => {
-        instance1[0].hide(); // ✅ hide after 2 seconds
+        instance2[0].hide(); // ✅ hide after 2 seconds
       }, 2000);
     });
   </script>
