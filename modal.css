@@ -652,13 +652,13 @@ label {
 .button-hover:hover{
     background-color: #557086;
 }
- /* ✅ Custom White Theme */
+ /* Custom White Theme */
  
     .tippy-box[data-theme~='custom-white'] {
       background-color: #ffffff;
       color: #000;
-      min-width: 131.73px;        /* ✅ your width */
-      min-height: 44px;        /* ✅ your height */
+      padding-inline: 0.5rem;     
+      min-height: 44px;       
       border-radius: 8px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.15);
       font-size: 14px;

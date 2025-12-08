@@ -10,3 +10,4 @@ if (path2.includes("bonus500")) deposit = "500";
 else if (path2.includes("bonus350")) deposit = "350";
 document.getElementById("deposit-id").innerText = `Deposit Bonus (${deposit}%)`;
 
+
