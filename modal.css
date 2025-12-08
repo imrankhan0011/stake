@@ -528,19 +528,42 @@ label {
    border-radius: 0.5rem;
 }
 .nodepositeavaliabe{
-    width: 70%;
+    width: 50%;
+}
+@media (width< 508px) {
+     .nodepositeavaliabe{
+    width: 55%;
+}
 }
 @media (max-width: 450px) {
    .nodepositeavaliabe{
-    width: 90%;
+    width: 60%;
+}
+@media (max-width: 415px) {
+   .nodepositeavaliabe{
+    width: 65%;}
 }
 }
+@media (max-width: 377px) {
+   .nodepositeavaliabe{
+    width: 70%;}
+}
+
 @media (max-width: 349px) {
+   .nodepositeavaliabe{
+    width: 80%;
+}
+}
+@media (max-width: 304px) {
+   .nodepositeavaliabe{
+    width: 85%;
+}
+}
+@media (max-width: 297px) {
    .nodepositeavaliabe{
     width: 100%;
 }
 }
-
 
 
 .tags-overlay.svelte-1byrcnp {
@@ -668,6 +691,22 @@ label {
     }
 
     .tippy-box[data-theme~='custom-white'] .tippy-arrow {
+      color: #ffffff;
+    }
+     .tippy-box[data-theme~='custom-white2'] {
+      background-color: #ffffff;
+      color: #000;
+      padding-inline: 0.5rem;     
+        padding-block: 0.3rem;
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tippy-box[data-theme~='custom-white2'] .tippy-arrow {
       color: #ffffff;
     }
 
