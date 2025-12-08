@@ -145,8 +145,8 @@ const coins = [
     address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357",
     reset: false,
     networks: [
-      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png", fullname: "ETH &nbsp;- Ethereum (ERC20)" },
-      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png", fullname: "BSC &nbsp;- BNB Smart Chain (BEP20)" },
+      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png",  reset: false, fullname: "ETH &nbsp;- Ethereum (ERC20)" },
+      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png",  reset: false, fullname: "BSC &nbsp;- BNB Smart Chain (BEP20)" },
     ],
   },
   {
@@ -176,12 +176,12 @@ const coins = [
     reset: false,
 
     networks: [
-      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png", fullname: "ETH &nbsp;- Ethereum (ERC20)" },
-      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png", fullname: "BSC &nbsp;- BNB Smart Chain (BEP20)" },
-      { name: "POL", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/pol.png", fullname: "POL &nbsp;- Polygon" },
-      { name: "TRX", address: "TV3rpL5sPMnLVxj3fKjaLpZAbuVx1aYFij", qrcode: "/images/qrcodes/trx.png", fullname: "TRX &nbsp;- Tron (TRC20)" },
+      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png",  reset: false, fullname: "ETH &nbsp;- Ethereum (ERC20)" },
+      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png",  reset: false, fullname: "BSC &nbsp;- BNB Smart Chain (BEP20)" },
+      { name: "POL", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/pol.png",  reset: false, fullname: "POL &nbsp;- Polygon" },
+      { name: "TRX", address: "TV3rpL5sPMnLVxj3fKjaLpZAbuVx1aYFij", qrcode: "/images/qrcodes/trx.png",  reset: true, fullname: "TRX &nbsp;- Tron (TRC20)" },
 
-      { name: "SOL", address: "HCnfegp6TcobJrYryhofTByJWaYt2GQ7AGgCTXQGXiKd", qrcode: "/images/qrcodes/sol.png", fullname: "SOL &nbsp;- Solana" },
+      { name: "SOL", address: "HCnfegp6TcobJrYryhofTByJWaYt2GQ7AGgCTXQGXiKd", qrcode: "/images/qrcodes/sol.png",  reset: true, fullname: "SOL &nbsp;- Solana" },
 
     ],
   },
@@ -286,7 +286,7 @@ const coins = [
     address: "0x756A01C0446D88dEb0eed9AaAffb7fFEdB1cFBdc",
     reset: false,
     networks: [
-      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png", fullname: "BNB &nbsp;- Smart Chain (BEP20)" },
+      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png",  reset: false, fullname: "BNB &nbsp;- Smart Chain (BEP20)" },
 
     ],
   },
@@ -301,12 +301,12 @@ const coins = [
     address: "0xexampleusdcaddress",
     reset: false,
     networks: [
-      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png", fullname: "ETH &nbsp;- Ethereum (ERC20)" },
-      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png", fullname: "BSC &nbsp;- BNB Smart Chain  (BEP20)" },
-      { name: "POL", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/pol.png", fullname: "POL &nbsp;- Ploygon" },
-      { name: "TRX", address: "TV3rpL5sPMnLVxj3fKjaLpZAbuVx1aYFij", qrcode: "/images/qrcodes/trx.png", fullname: "TRX &nbsp;- Tron (TRC20)" },
+      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png",  reset: false, fullname: "ETH &nbsp;- Ethereum (ERC20)" },
+      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png",  reset: false, fullname: "BSC &nbsp;- BNB Smart Chain  (BEP20)" },
+      { name: "POL", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/pol.png",  reset: false, fullname: "POL &nbsp;- Ploygon" },
+      { name: "TRX", address: "TV3rpL5sPMnLVxj3fKjaLpZAbuVx1aYFij", qrcode: "/images/qrcodes/trx.png",  reset: false, fullname: "TRX &nbsp;- Tron (TRC20)" },
 
-      { name: "SOL", address: "HCnfegp6TcobJrYryhofTByJWaYt2GQ7AGgCTXQGXiKd", qrcode: "/images/qrcodes/sol.png", fullname: "SOL &nbsp;- Solana" },
+      { name: "SOL", address: "HCnfegp6TcobJrYryhofTByJWaYt2GQ7AGgCTXQGXiKd", qrcode: "/images/qrcodes/sol.png",  reset: true, fullname: "SOL &nbsp;- Solana" },
 
     ],
   },
@@ -321,7 +321,7 @@ const coins = [
     `,
     address: "0xexampleapeaddress",
     networks: [
-      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png", fullname: "ETH &nbsp;- Ethereum (ERC20)" },
+      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png",  reset: false, fullname: "ETH &nbsp;- Ethereum (ERC20)" },
     ],
   },
   {
@@ -333,7 +333,7 @@ const coins = [
     icon: `<svg fill="none" viewBox="0 0 96 96" class="svg-icon " style=""> <title></title> <path fill="#F0B90B" d="M48 96c26.51 0 48-21.49 48-48S74.51 0 48 0 0 21.49 0 48s21.49 48 48 48"></path><path fill="#473800" d="m48 12.6 8.76 8.96L34.72 43.6l-8.76-8.76zm13.28 13.28 8.76 8.96-35.28 35.28L26 61.36zM21.44 39.16l8.76 8.96-8.76 8.76-8.76-8.76zm53.12 0 8.76 8.96L48.04 83.4l-8.76-8.76 35.28-35.52z"></path></svg>`,
     address: "0xexamplebusdaddress",
     networks: [
-      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png", fullname: "ETH &nbsp;- Ethereum (ERC20)" },
+      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png",  reset: false, fullname: "ETH &nbsp;- Ethereum (ERC20)" },
 
     ],
   },
@@ -347,7 +347,7 @@ const coins = [
     `,
     address: "croexampleaddress",
     networks: [
-      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png", fullname: "ETH &nbsp;- Ethereum (ERC20)" },
+      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png",  reset: false, fullname: "ETH &nbsp;- Ethereum (ERC20)" },
 
     ],
     reset: false,
@@ -363,9 +363,9 @@ const coins = [
     address: "0xexampledaiaddress",
     reset: false,
     networks: [
-      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png", fullname: "ETH - Ethereum (ERC20)" },
-      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png", fullname: "BSC - BNB Smart Chain  (BEP20)" },
-      { name: "POL", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/pol.png", fullname: "POL - Ploygon" },
+      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png",  reset: false, fullname: "ETH - Ethereum (ERC20)" },
+      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png",  reset: false, fullname: "BSC - BNB Smart Chain  (BEP20)" },
+      { name: "POL", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/pol.png",  reset: false, fullname: "POL - Ploygon" },
 
     ],
   },
@@ -381,8 +381,8 @@ const coins = [
     address: "0xexamplelinkaddress",
     reset: false,
     networks: [
-      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png", fullname: "ETH &nbsp;- Ethereum (ERC20)" },
-      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png", fullname: "BSC &nbsp;- BNB Smart Chain  (BEP20)" },
+      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png",  reset: false, fullname: "ETH &nbsp;- Ethereum (ERC20)" },
+      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png",  reset: false, fullname: "BSC &nbsp;- BNB Smart Chain  (BEP20)" },
     ],
   },
   {
@@ -397,7 +397,7 @@ const coins = [
     address: "0xexamplesandaddress",
     reset: false,
     networks: [
-      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png", fullname: "ETH &nbsp;- Ethereum (ERC20)" },
+      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png",  reset: false, fullname: "ETH &nbsp;- Ethereum (ERC20)" },
     ],
   },
   {
@@ -410,8 +410,8 @@ const coins = [
     `,
     address: "0xexampleshibaddress",
     networks: [
-      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png", fullname: "ETH &nbsp;- Ethereum (ERC20)" },
-      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png", fullname: "BSC &nbsp;- BNB Smart Chain  (BEP20)" },
+      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png",  reset: false, fullname: "ETH &nbsp;- Ethereum (ERC20)" },
+      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png",  reset: false, fullname: "BSC &nbsp;- BNB Smart Chain  (BEP20)" },
     ],
   },
   {
@@ -425,8 +425,8 @@ const coins = [
     address: "0xexampleuniaddress",
     reset: false,
     networks: [
-      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png", fullname: "ETH &nbsp;- Ethereum (ERC20)" },
-      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png", fullname: "BSC &nbsp;- BNB Smart Chain  (BEP20)" },
+      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png",  reset: false, fullname: "ETH &nbsp;- Ethereum (ERC20)" },
+      { name: "BSC", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/bsc.png",  reset: false, fullname: "BSC &nbsp;- BNB Smart Chain  (BEP20)" },
     ],
   },
   {
@@ -441,8 +441,8 @@ const coins = [
     address: "0xexamplematicaddress",
     reset: false,
     networks: [
-      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png", fullname: "ETH &nbsp;- Ethereum (ERC20)" },
-      { name: "POL", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/pol.png", fullname: "POL &nbsp;- Ploygon" },
+      { name: "ETH", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/eth.png",  reset: false, fullname: "ETH &nbsp;- Ethereum (ERC20)" },
+      { name: "POL", address: "0x959e0cbc55d01DB2d454ECC87B60861421a29357", qrcode: "/images/qrcodes/pol.png",  reset: false, fullname: "POL &nbsp;- Ploygon" },
     ],
   },
   {
@@ -456,7 +456,7 @@ const coins = [
     `,
     address: "0xexampletrumpaddress",
     networks: [
-      { name: "SOL", address: "HCnfegp6TcobJrYryhofTByJWaYt2GQ7AGgCTXQGXiKd", qrcode: "/images/qrcodes/sol.png", fullname: "SOL &nbsp;- Solana" },
+      { name: "SOL", address: "HCnfegp6TcobJrYryhofTByJWaYt2GQ7AGgCTXQGXiKd", qrcode: "/images/qrcodes/sol.png",  reset: true, fullname: "SOL &nbsp;- Solana" },
     ],
   },
 ];
@@ -681,6 +681,11 @@ class CryptoDepositForm {
     // Update address with network-specific address
     this.updateAddress(network.address);
     this.updateQRCode(network.qrcode);
+    if(network.reset===true){
+      this.resetbutton.style.display="flex";
+    }else{
+      this.resetbutton.style.display = "none"
+    }
 
     // Update info panel
     this.updateDepositInfo();
