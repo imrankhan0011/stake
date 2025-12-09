@@ -745,11 +745,11 @@ label {
 .qr-image {
   width: 104px;
   height: 104px;
-  object-fit: contain;
+  object-fit: contain !important;
 
   /* Anti-flicker & anti-blur */
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  will-change: auto;
+  transform: translateZ(0) !important;
+  backface-visibility: hidden !important;
+  will-change: auto !important;
 }
 
