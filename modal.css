@@ -1,3 +1,18 @@
+/* Hide scrollbar for Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE & older Edge */
+body {
+  -ms-overflow-style: none;
+}
+
 /* .deposit-form {
 
     padding: 32px;
@@ -717,7 +732,7 @@ label {
       transform: rotate(180deg);
     }
 
-    /* img.svelte-hqfus1, svg.svelte-hqfus1 {
+    img.svelte-hqfus1 {
 image-rendering: pixelated !important;
-} */
+}
 
