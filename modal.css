@@ -742,7 +742,7 @@ label {
 }
 
 .qr-image {
-
+image-rendering: pixelated !important;
   object-fit: contain !important;
 
   /* Anti-flicker & anti-blur */
