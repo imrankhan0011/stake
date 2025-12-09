@@ -280,11 +280,7 @@
       align-items: center;
       justify-content: center;
     }
-    @media (width < 552px) {
-      .modal{
-        padding: 0 !important;
-      }
-    }
+   
 
     .tooltip.variant-dark.svelte-gnc8nc {
       background: var(--grey-400);
@@ -1862,10 +1858,10 @@
                   </div>
                   <div class="arrow svelte-gnc8nc network-arrow" style="
                         position: absolute;
-                        left: 0px;
-                        transform: translate(230px, 8px);
+                        left: 50%;
+  transform: translate(-50%, -50%);
                         display: none;
-                        bottom: -6px;
+                        bottom: -18px;
                       "></div>
 
                   <div class="options-container options-container2 dropdown-scroll-content scrollY scrollY-light scroll-light svelte-sd56x"
@@ -24248,10 +24244,10 @@ theme: 'custom-white',
     });
 
     document.getElementById('copy-btn-tooltip').addEventListener('click', () => {
-      instance[0].show();   // show tooltip manually
+      instance[0].show();   
 
       setTimeout(() => {
-        instance[0].hide(); // ✅ hide after 2 seconds
+        instance[0].hide(); 
       }, 2000);
     });
   </script>

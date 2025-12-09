@@ -167,9 +167,7 @@ label {
     .icons-fonts{
         font-size: 1.6rem;
     }
-.modal-scroll-y{
-    width: 90% !important;
-}
+
 .content-wrapper.currency-view-detailed-overflow{
       overflow: auto;
   scrollbar-width: none !important; /* Firefox */
@@ -309,7 +307,7 @@ label {
 }
 @media (max-width: 768px) {
     .arrow-top-css{
-        top: 76px;
+        top: 81px;
     }
     
 }
@@ -477,12 +475,12 @@ label {
     }
     
     .select-display {
-        padding: 10px 12px;
+        padding: 12px 20px;
         min-height: 48px;
     }
     
     .address-input {
-        padding: 10px 12px;
+        padding: 12px 20px;
         font-size: 13px;
     }
 }
@@ -692,6 +690,7 @@ label {
 
     .tippy-box[data-theme~='custom-white'] .tippy-arrow {
       color: #ffffff;
+      
     }
      .tippy-box[data-theme~='custom-white2'] {
       background-color: #ffffff;
@@ -709,12 +708,16 @@ label {
     .tippy-box[data-theme~='custom-white2'] .tippy-arrow {
       color: #ffffff;
     }
+    .tippy-box[data-placement^=top]>.tippy-arrow:before{
+        bottom: -6px;
+    }
 
 
     .rotate_chevron{
       transform: rotate(180deg);
     }
 
-    img.svelte-hqfus1, svg.svelte-hqfus1 {
+    /* img.svelte-hqfus1, svg.svelte-hqfus1 {
 image-rendering: pixelated !important;
-}
+} */
+
