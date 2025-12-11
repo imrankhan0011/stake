@@ -565,7 +565,7 @@ hr.svelte-1ey91rp {
 }
 
 .sidebar.normal.svelte-13bc1zy {
-    width: var(--width)
+    width: 260px;
 }
 
 .sidebar.small.svelte-13bc1zy {
@@ -695,7 +695,8 @@ hr.svelte-1ey91rp {
     width: 100%
 }
 
-.button-wrap.active.svelte-1sv9hne:before {
+.button-wrap.active.svelte-1sv9hne:before,
+.button-wrap.velte-1sv9hne.browseBtn.active::before {
     content: "";
     position: absolute;
     top: 0;

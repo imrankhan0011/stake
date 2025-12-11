@@ -738,6 +738,102 @@ image-rendering: pixelated !important;
   will-change: auto !important;
 }
 
+#sidebar-wraper {
+  
+  transition: width 0.3s ease;   /* smooth width animation */
+}
+.content.svelte-13bc1zy,
+.content.svelte-191monz {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.link-wrap.svelte-1yj7c6.collapsed{
+    display: none;
+}
+
+.content.svelte-13bc1zy.animate,
+.content.svelte-191monz.animate {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+/* base for your content */
+.content.svelte-13bc1zy.mobile {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* when triggering animation: start 20px below and transparent */
+.content.svelte-13bc1zy.mobile.animate-up {
+  transform: translateY(20px);
+  opacity: 0;
+}
+.mobile-sidebar {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* When animation triggers */
+.mobile-sidebar.animate-up {
+  transform: translateY(100px);
+  opacity: 0;
+}
+/* CLOSE animation (slide down to bottom) */
+.mobile-sidebar.animate-close {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+/* accordian */
+.accordion .content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
+}
+
+.accordion.isOpen .content {
+  max-height: 1000px; 
+}
+
+.accordion .chevron svg {
+  transition: transform 0.35s ease; 
+  transform: rotate(0deg);
+}
+
+.accordion.isOpen .chevron svg {
+  transform: rotate(180deg);
+}
+
+.wrapper.ml-6{
+    position: relative;
+}
+.wrapper.ml-6 button:first-child {
+    border-top-left-radius: 10px;
+
+}
+.wrapper.ml-6 button:last-child {
+    border-bottom-left-radius: 10px;
+
+}
+.wrapper.ml-6 a:first-child button {
+    border-top-left-radius: 10px;
+}
+
+.wrapper.ml-6 a:last-child button {
+    border-bottom-left-radius: 10px;
+}
+
+.wrapper.ml-6::before{
+      position: absolute;
+    content: "";
+    background: rgb(47, 69, 83);
+    height: 100%;
+    width: 2px;
+    margin-block: 8px;
+    inset: 0;
+}
+.base-sidebar-anchor.max-w-full.svelte-a595de button,
+.accordion.svelte-1kd6xyi.accordion-stacked  {
+    border-radius: 0;
+}
+/* mobile slide */
 
 /* side bar */
 .computer-sidebar,
@@ -749,6 +845,8 @@ image-rendering: pixelated !important;
 .computer-sidebar.active,
 .ipad-sidebar.active {
   display: block !important;
+    transform: translateX(0); 
+
 }
 @media (width < 768px) {
     .computer-sidebar,
@@ -764,3 +862,22 @@ image-rendering: pixelated !important;
 }
 }
 
+/* slide in from right */
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* slide out to right */
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
