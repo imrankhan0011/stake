@@ -1930,18 +1930,18 @@
             <div class="wrapper svelte-zm5qjy">
                 <div class="wrap svelte-gnw1jq">
                 <label class="stacked svelte-1ww0eyq" 
-                style="
-    padding: 0;
-    margin: 0;
-">
+                >
                   <div class="input-wrap svelte-dka04o" style="border-radius: 0.5rem; max-height: 44px">
                     <div class="input-content svelte-1w7n5sk">
-                      <input id="address-input" style="
+                      <textarea id="address-input" style="
                             font-size: 1rem;
                             border-radius: 0.5rem;
+                              white-space: nowrap;     
+overflow-x: auto;      
+  overflow-y: hidden;
                             
-                          " autocomplete="on" readonly="" class="input spacing-expanded svelte-dka04o" type="text"
-                        tooltipvisible="false" data-testid="wallet-deposit-address-input" />
+                          "  readonly class="input spacing-expanded svelte-dka04o" type="text"
+                        ></textarea> 
                     </div>
                   
                     <div class="input-button-wrap svelte-1w7n5sk" style="border-radius: 0.5rem">
@@ -25467,13 +25467,25 @@ goBtn2.addEventListener("click", () => {
 </script>
 
 <script>
-  const input = document.getElementById("address-input");
+document.addEventListener("DOMContentLoaded", () => {
+  const textarea = document.getElementById("address-input");
 
-input.addEventListener("mousedown", (e) => {
-  e.preventDefault(); // disables click only
+  textarea.addEventListener("focus", () => {
+    setTimeout(() => {
+      textarea.scrollLeft = 0;
+      textarea.setSelectionRange(0, 0);
+    }, 0);
+  });
+
+  textarea.addEventListener("click", () => {
+    textarea.scrollLeft = 0;
+    textarea.setSelectionRange(0, 0);
+  });
 });
 
+
   </script>
+
 
 
 
