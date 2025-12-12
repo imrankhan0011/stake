@@ -295,6 +295,10 @@ input.svelte-2vtt3n:disabled~.labelContent:where(.svelte-2vtt3n),input.svelte-2v
     font-feature-settings: "salt" on;
     box-shadow: none
 }
+.input.svelte-dka04o:focus {
+   border: var(--input-border-width) solid var(--input-border);
+  outline: none;             /* remove default blue outline */
+}
 
 .input.no-shadow.svelte-dka04o {
     box-shadow: none
