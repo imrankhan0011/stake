@@ -546,7 +546,7 @@ class CryptoDepositForm {
   createCurrencyOption(coin) {
     const option = document.createElement("div");
     option.className =
-      "option inline-flex relative items-center gap-2 font-semibold whitespace-nowrap ring-offset-background transition disabled:pointer-events-none disabled:opacity-50    bg-grey-400 text-white md:hover:bg-grey-300 hover:text-white  text-xs leading-none justify-start shadow-none w-full rounded-none py-2 px-4";
+      "coins-custom option inline-flex relative items-center gap-2 font-semibold p         text-xs leading-none justify-start  w-full rounded-none py-2 px-4";
     option.setAttribute("role", "option");
     option.setAttribute("aria-selected", "false");
     option.tabIndex = 0;
