@@ -62,6 +62,10 @@ body {
     background-color: #2F4553;
     background: #2F4553;
 }
+.stacked.svelte-1ww0eyq:active,
+.wrap.svelte-gnw1jq:active{
+    background-color: #1A2C38;
+}
 .option:hover,
 .select-display:hover,
 .button-hover:hover,
