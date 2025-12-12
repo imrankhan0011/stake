@@ -63,12 +63,18 @@ body {
     background: #2F4553;
 }
 .option:hover,
-.select-display:hover{
+.select-display:hover,
+.button-hover:hover,
+#copy-btn-tooltip:hover,
+#reset-address-button:hover,
+#showalertmessage:hover,
+#two_factor:hover{
     background-color: #547086;
 }
 @media (width < 650px) {
     .option:hover,
-    .select-display:hover{
+    .select-display:hover,
+    .button-hover:hover{
     background-color: #2F4553 !important;
 }
 }
@@ -687,9 +693,7 @@ label {
 /* updated */
 
 
-.button-hover:hover{
-    background-color: #557086;
-}
+
  /* Custom White Theme */
  
     .tippy-box[data-theme~='custom-white'] {

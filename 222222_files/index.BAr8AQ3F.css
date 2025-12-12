@@ -294,7 +294,7 @@
     flex-grow: 1;
     width: 100%;
     display: flex;
-    pointer-events: none !important;
+ 
 }
 .input-content.svelte-1w7n5sk.svelte-1w7n5sk.svelte-1w7n5sk:active{
     transform: scale(0);
