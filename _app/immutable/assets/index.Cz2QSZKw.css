@@ -282,7 +282,6 @@ input.svelte-2vtt3n:disabled~.labelContent:where(.svelte-2vtt3n),input.svelte-2v
     border: var(--input-border-width) solid var(--input-border);
     border-radius: var(--ds-radius-md);
     font-weight: var(--input-font-weight);
-    transition: all var(--input-transition);
     outline: 0;
     margin: var(--spacing-0);
     cursor: text;
@@ -444,7 +443,8 @@ input.svelte-2vtt3n:disabled~.labelContent:where(.svelte-2vtt3n),input.svelte-2v
 }
 
 .input[readonly].svelte-dka04o {
-    background: var(--input-border)
+    background: var(--input-border);
+    
 }
 
 .input[readonly].svelte-dka04o:focus,.input[readonly].svelte-dka04o:hover {
