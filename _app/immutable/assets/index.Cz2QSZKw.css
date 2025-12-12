@@ -275,13 +275,14 @@ input.svelte-2vtt3n:disabled~.labelContent:where(.svelte-2vtt3n),input.svelte-2v
 }
 
 .input.svelte-dka04o {
-    width: 100%;
+        width: 100%;
     color: var(--input-color);
     background: var(--input-background);
     box-shadow: var(--input-box-shadow);
     border: var(--input-border-width) solid var(--input-border);
     border-radius: var(--ds-radius-md);
     font-weight: var(--input-font-weight);
+    transition: all var(--input-transition);
     outline: 0;
     margin: var(--spacing-0);
     cursor: text;
@@ -293,7 +294,7 @@ input.svelte-2vtt3n:disabled~.labelContent:where(.svelte-2vtt3n),input.svelte-2v
     font-size: var(--ds-font-size-md, 1rem);
     font-variant-numeric: lining-nums tabular-nums;
     font-feature-settings: "salt" on;
-    box-shadow: none
+    box-shadow: none;
 }
 .input.svelte-dka04o:focus {
    border: var(--input-border-width) solid var(--input-border);

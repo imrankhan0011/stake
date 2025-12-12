@@ -72,11 +72,16 @@ body {
     background-color: #547086;
 }
 @media (width < 650px) {
-    .option:hover,
-    .select-display:hover,
-    .button-hover:hover{
+   .option:hover,
+.select-display:hover,
+.button-hover:hover,
+#copy-btn-tooltip:hover,
+#reset-address-button:hover,
+#showalertmessage:hover,
+#two_factor:hover{
     background-color: #2F4553 !important;
 }
+
 }
 .network-name-title{
     font-size: 14px;
