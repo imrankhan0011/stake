@@ -67,7 +67,8 @@ body {
     background-color: #547086;
 }
 @media (width < 650px) {
-    .option:hover{
+    .option:hover,
+    .select-display:hover{
     background-color: #2F4553 !important;
 }
 }
