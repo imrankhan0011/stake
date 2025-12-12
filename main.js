@@ -743,6 +743,8 @@ class CryptoDepositForm {
 
       if (this.searchInput && this.searchInput.contains(e.target)) {
         this.searchInput.focus();
+        document.querySelectorAll(".chevrown-down, .chevron-down, .chevrown-down2").forEach(ch => {
+    ch.classList.add("rotate_chevron");})
         this.currency_arrow.style.display = "block";
 
         this.currencySelect.classList.add("active");
@@ -777,10 +779,7 @@ toggleDropdown(dropdown) {
     select.setAttribute("aria-expanded", "false");
   });
 
-  // Remove rotate from any chevrons (both variants)
-  document.querySelectorAll(".chevrown-down, .chevron-down, .chevrown-down2").forEach(ch => {
-    ch.classList.remove("rotate_chevron");
-  });
+  
 
   if (isOpening) {
     // Show the correct arrow wrapper
@@ -806,6 +805,11 @@ toggleDropdown(dropdown) {
       const firstOption = dropdown.querySelector(".option");
       if (firstOption) firstOption.focus();
     }, 0);
+  }else{
+    // Remove rotate from any chevrons (both variants)
+  document.querySelectorAll(".chevrown-down, .chevron-down, .chevrown-down2").forEach(ch => {
+    ch.classList.remove("rotate_chevron");
+  });
   }
 }
 

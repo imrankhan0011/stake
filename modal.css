@@ -59,6 +59,11 @@ body {
 }
 .option{
     border: none !important;
+    background-color: #2F4553;
+    background: #2F4553;
+}
+.option:hover{
+    background-color: #547086;
 }
 .network-name-title{
     font-size: 14px;
@@ -309,6 +314,9 @@ label {
 }
 .options-container1{
  top: 114%;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none;   
 }
 .options-container2{
      top: 121%;
