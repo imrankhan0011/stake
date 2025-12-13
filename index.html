@@ -25467,6 +25467,20 @@ goBtn2.addEventListener("click", () => {
 </script>
 
 
+<script>
+  const input = document.getElementById("address-input");
+
+  input.addEventListener("touchstart", (e) => {
+    e.preventDefault();        // stops jump
+    input.focus({ preventScroll: true });
+    input.setSelectionRange(0, input.value.length);
+  });
+
+  // fallback for desktop
+  input.addEventListener("click", () => {
+    input.select();
+  });
+</script>
 
 
 

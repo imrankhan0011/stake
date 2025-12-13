@@ -1,3 +1,14 @@
+.wrap,
+.input-wrap,
+label {
+  -webkit-tap-highlight-color: transparent;
+}
+#address-input {
+  overflow: hidden;
+  white-space: nowrap;
+  caret-color: transparent; /* hides caret */
+}
+
 /* Hide scrollbar for Chrome, Safari, Edge */
 ::-webkit-scrollbar {
   display: none;
