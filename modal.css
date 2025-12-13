@@ -5,11 +5,10 @@ label {
 }
 #address-input {
   user-select: text;
-  caret-color: transparent;
   -webkit-user-select: text;
   -webkit-tap-highlight-color: transparent;
+  white-space: nowrap;
 }
-
 
 
 
