@@ -4,11 +4,11 @@ label {
   -webkit-tap-highlight-color: transparent;
 }
 #address-input {
-  user-select: text;
-  -webkit-user-select: text;
-  -webkit-tap-highlight-color: transparent;
+
   white-space: nowrap;
+  caret-color: transparent;
 }
+
 
 
 /* Hide scrollbar for Chrome, Safari, Edge */
