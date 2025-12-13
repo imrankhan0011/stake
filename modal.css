@@ -114,10 +114,18 @@ body {
 #two_factor:hover{
     background-color: #2F4553 !important;
 }
+#copy-btn-tooltip,
+#reset-address-button {
+  transition: transform 0.12s ease, background-color 0.12s ease;
+  transform-origin: center;
+}
+
 #copy-btn-tooltip:active,
 #reset-address-button:active {
   background-color: #2F4553 !important;
+  transform: scale(0.96);
 }
+
 
 
 }
