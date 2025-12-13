@@ -10,6 +10,19 @@ label {
   white-space: nowrap;
 }
 /* h */
+.label-content {
+  pointer-events: none;
+}
+.my-custom-span{
+    display: flex;
+    flex-grow: 1;
+        flex-direction: column-reverse;
+    align-items: flex-start;
+    position: relative;
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 14px;
+}
 
 
 
