@@ -25471,26 +25471,18 @@ goBtn2.addEventListener("click", () => {
 
   input.addEventListener("touchstart", (e) => {
     e.preventDefault();        // stops jump
-    input.focus({ preventScroll: true });
     input.setSelectionRange(0, input.value.length);
   });
 
   // fallback for desktop
-  input.addEventListener("click", () => {
+  input.addEventListener("click", (e) => {
+        e.preventDefault();        // stops jump
+
     input.select();
   });
 </script>
 
-<script>
 
-input.addEventListener("focus", () => {
-  // select all WITHOUT blocking iOS behavior
-  setTimeout(() => {
-    input.setSelectionRange(0, input.value.length);
-  }, 0);
-});
-
-</script>
 
 
 
