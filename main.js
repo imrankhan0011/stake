@@ -700,7 +700,6 @@ class CryptoDepositForm {
   updateQRCode(qrcodeUrl) {
     if (this.qrcodeimg) {
       this.qrcodeimg.src = qrcodeUrl || "";
-      // this.qrcodeimg.style.display = qrcodeUrl ? "block" : "none";
     }
   }
 

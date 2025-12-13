@@ -114,6 +114,11 @@ body {
 #two_factor:hover{
     background-color: #2F4553 !important;
 }
+#copy-btn-tooltip:active,
+#reset-address-button:active {
+  background-color: #2F4553 !important;
+}
+
 
 }
 .network-name-title{
