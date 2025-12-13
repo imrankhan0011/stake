@@ -4,7 +4,6 @@ label {
   -webkit-tap-highlight-color: transparent;
 }
 #address-input {
-  overflow: hidden;
   white-space: nowrap;
   caret-color: transparent; /* hides caret */
 }

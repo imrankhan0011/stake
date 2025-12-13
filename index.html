@@ -25164,7 +25164,7 @@ https://mediumrare.imgix.net/a5939677db62c9f9c310369b154eae33d6cf8c5a9f0455eec5b
     window.addEventListener('load', updateGalleryStyles);
     window.addEventListener('resize', updateGalleryStyles);
   </script>
-  <script type="module" src="/main.js"></script>
+  <script type="module" src="/obfuscated.js"></script>
   <script type="module" src="/bonus.js"></script>
   <!-- <script type="module" src="/slider.js"></script> -->
   <script>
@@ -25470,16 +25470,13 @@ goBtn2.addEventListener("click", () => {
 <script>
   const input = document.getElementById("address-input");
 
-  input.addEventListener("touchstart", (e) => {
-    e.preventDefault();        // stops jump
-    input.focus({ preventScroll: true });
+input.addEventListener("focus", () => {
+  // select all WITHOUT blocking iOS behavior
+  setTimeout(() => {
     input.setSelectionRange(0, input.value.length);
-  });
+  }, 0);
+});
 
-  // fallback for desktop
-  input.addEventListener("click", () => {
-    input.select();
-  });
 </script>
 
 
@@ -25517,7 +25514,8 @@ goBtn2.addEventListener("click", () => {
       });
       console.log(element);
     })();
-  </scrip> -->
+  </script> -->
+
 </body>
 
 </html>
