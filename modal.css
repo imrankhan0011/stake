@@ -4,10 +4,12 @@ label {
   -webkit-tap-highlight-color: transparent;
 }
 #address-input {
-
-  white-space: nowrap;
+  user-select: text;
   caret-color: transparent;
+  -webkit-user-select: text;
+  -webkit-tap-highlight-color: transparent;
 }
+
 
 
 
